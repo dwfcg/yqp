@@ -1,0 +1,141 @@
+/**index.wxss**/
+
+page{height:100%}
+.shopShow{
+  position:relative;
+  text-align: center;
+  width: 100%;
+  height: 40%;
+}
+.color{
+  position: absolute;
+  top:0px;
+  left:0px;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  background-color: rgba(0, 0, 0, 0.5)
+}
+
+.imgTop{
+  width: 100%;
+  height: 100%;
+}
+.imgMin{
+  position: absolute;
+  top:-50px;
+  left:20px;
+  width: 100px;
+  height: 100px;
+}
+.shopSelect{
+  position:relative;
+  width: 100%;
+  height:60%;
+  z-index: 9999;
+}
+.colorText{
+  padding-top: 60px;
+  padding-left:20px;
+}
+.VcolorBtn{
+  padding-top: 10px;
+}
+.colorBtn ,.sizeBtn{
+  width:60px;
+  height:30px;
+  float: left;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 30px;
+  margin-right:10px;
+  margin-top: 10rpx;
+}
+.active{
+  background-color: #cd0e28;
+  color:#ffffff;
+}
+.size{
+  clear: both;
+  padding-left:20px;
+  padding-top: 10px;
+}
+.buy{
+  width: 100%;
+  height:150rpx;
+  position:fixed;
+  left:0px;
+  bottom: 0px;
+  color:#ffffff;
+  z-index: 9999;
+}
+.left{
+  float: left;
+  width: 50%;
+  height:100%;
+  
+  text-align: center;
+  
+}
+.p25{
+  padding-top: 25px;
+}
+.red{
+  background-color: #cd0e28;
+}
+.yellow{
+  background-color: #f3ae00;
+  height:100%;
+}
+.add{
+  font-size: 10px;
+}
+.p10{
+  padding-top: 10px;
+}
+
+
+
+/*主容器*/  
+.stepper {  
+    width: 80px;  
+    height: 26px;  
+    /*给主容器设一个边框*/  
+    border: 1px solid #ccc;  
+    border-radius: 3px;  
+    margin-top: 10px;
+}  
+  
+/*加号和减号*/  
+.stepper text {  
+    width: 19px;  
+    line-height: 26px;  
+    text-align: center;  
+    float: left;  
+}  
+  
+/*数值*/  
+.stepper input {  
+    width: 40px;  
+    height: 26px;  
+    float: left;  
+    margin: 0 auto;  
+    text-align: center;  
+    font-size: 12px;  
+    /*给中间的input设置左右边框即可*/  
+    border-left: 1px solid #ccc;  
+    border-right: 1px solid #ccc;  
+}  
+  
+/*普通样式*/  
+.stepper .normal{  
+    color: black;  
+}  
+  
+/*禁用样式*/  
+.stepper .disabled{  
+    color: #ccc;  
+}  
+swiper{
+  height:100%;
+}

@@ -1,0 +1,80 @@
+<view class="box">
+  <view class="head">
+    <text class="top_title">全民推广介绍：</text>
+    <text class="list_title">成功邀请一家实体店即可获得<text style="color:rgb(205,21,49);font-size: 32rpx;">150</text>元佣金</text>
+    <text class="list_title">被邀请实体店也可以获得<text style="color:rgb(205,21,49);font-size: 32rpx;">1000</text>元优惠券</text>
+    <text class="list_title">被邀请实体店完成实名认证即可提现<text style="color:rgb(205,21,49);font-size: 32rpx;">75</text>元</text>
+    <text class="list_title">剩余<text style="color:rgb(205,21,49);font-size: 32rpx;">75</text>需该店铺下单金额满<text style="color:rgb(205,21,49);font-size: 32rpx;">500</text>元</text>
+    <text class="list_title">每位兼职人员业绩达到<text style="color:rgb(205,21,49);font-size: 32rpx;">30</text>签约店铺之后（不限时间，不限地点）2年内的每个月都可享受所邀约注册店铺的交易额<text style="color:rgb(205,21,49);font-size: 32rpx;">0.2%</text>的佣金回报。</text>
+  </view>
+  <view class="body">
+    <text class="body_top">我邀请的</text>
+    <view class="share">
+    <view class="share_list left" wx:for="{{users}}" style="{{index==4?'margin-right:0;':''}}">
+        <image src="{{item.userPhoto?item.userPhoto:'../../images/icon_yaoqing@2x.png'}}"></image>
+      </view>
+      
+     
+     
+    </view>
+    <view class="money">
+     <view class="money_list left" wx:for="{{users}}">
+        {{item.money?item.money:0}}元
+      </view>
+     
+    </view>
+    <view class="right_img">
+      <view class="right">
+        <image src='../../images/icon_xuanze@2x.png'></image>
+      </view>
+    </view>
+    <view class="body_foot">
+      <view class="left yj" style="margin-left:70rpx;">
+        <text class="yj_top"><text style="font-size:34rpx;">{{intive.u_money}}</text>元</text>
+        <text  class="yj_top" style="color:#000;margin-top:20rpx;">佣金</text>
+      </view>
+      <view class="left yj" style="margin-left:86rpx;" bindtap='getCode'>
+        <text class="yj_top"><text style="font-size:34rpx;">{{intive.u_s_money}}</text>元</text>
+        <text  class="yj_top" style="color:#000;margin-top:20rpx;">可提现</text>
+      </view>
+      <view class="left xd">
+      
+        <view>你邀请的商家还有{{intive.num}}家</view>
+        <view>未达到下单金额目标</view>
+        <view>去维护提高下单金额</view>
+        
+      </view>
+     
+    </view>
+  </view>
+  <view class="yq">
+    <view>
+      如何快速邀请实体店
+    </view>
+  </view>
+  <view class="bottom">
+
+    <view class="mycode">
+      <view class="code">
+        <text class="tblin_items_txt left" selectable="true">{{code}}</text>
+ <view class="tblin_items_btn left" bindtap="copyTBL">复制邀请码</view>
+
+      </view>
+     
+    </view>
+    <view class="title">
+      转发此内容给您认识的实体店主和友商群
+    </view>
+    <view style="margin-left:30rpx;margin-top:20rpx;width:690rpx;height:434rpx; position: relative;">
+      
+      <image src='../../images/pic_changjia@2x.png'></image>
+      <button open-type='share' style="width:690rpx;height:434rpx; position: absolute;top:0;left:0;opacity: 0;"></button>
+    </view>
+  </view>
+
+  <modal hidden="{{hiddenmodalput}}" style="z-index:99999" title="银行卡绑定" confirm-text="提交" cancel-text="取消" bindcancel="modalinput" bindconfirm="confirm">
+    <input type='text' bindinput='mycode' placeholder="请输入银行卡号" auto-focus/>
+    <input type='text' bindinput='myname' placeholder="请输入办卡人姓名" auto-focus/>
+    <input type='text' bindinput='myphone' placeholder="请输入办卡人电话" auto-focus/>
+</modal>
+</view>

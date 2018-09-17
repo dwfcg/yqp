@@ -1,0 +1,48 @@
+<!--pages/address/address.wxml-->
+<view class='heard'>
+  <view class='box'>
+    <view class='left'>使用店铺默认地址</view>
+    <view class='right'>
+      <navigator url=''>修改</navigator>
+    </view>
+  </view>
+  <view class='box1'>
+    <view class='name'>{{defaultaddress.userPhone}}</view>
+    <view class='phone'>{{defaultaddress.userPhone}}</view>
+  </view>
+  <view class='address'>
+    {{defaultaddress.userPhone}}
+  </view>
+</view>
+<view class='heard'>
+  <view class='box'>
+    <view class='left'>使用定制地址</view>
+    <view class='right'>
+      <navigator  bindtap=''>修改</navigator>
+    </view>
+  </view>
+  <view class='data'>
+    <view class='box2'>
+      <view class='left'>姓名：</view>
+      <view>
+        <input id='name' placeholder='请填写收件人姓名' value='{{defaultaddress.userName}}'></input>
+      </view>
+    </view>
+    <view class='box2'>
+      <view class='left'>电话：</view>
+      <view>
+        <input id='phone' placeholder='请填写收件人电话' value='{{defaultaddress.userPhone}}'></input>
+      </view>
+    </view>
+    <view class='box2'>
+      <view class='left'>地址：</view>
+      <view>
+        <input id='address' placeholder='请填写收件人地址' value='{{defaultaddress.userAddress}}'></input>
+      </view>
+    </view>
+    <view class='button'>
+      <navigator url=''>保存</navigator>
+    </view>
+  </view>
+
+</view>

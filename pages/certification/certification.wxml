@@ -1,0 +1,142 @@
+<view class="content">
+  <view class='content_list'>
+    <view class="img left">
+      <image src='../../ios/icon_xingming@2x.png'></image>
+    </view>
+    <view class="left text">
+      <text decode="{{true}}">真&nbsp;实&nbsp;姓&nbsp;名</text>
+    </view>
+    <view class="left input">
+      <input type="text" bindblur='getInput' data-name="name" placeholder='请输入身份证姓名'></input>
+    </view>
+  </view>
+  <view class='content_list'>
+    <view class="img left">
+      <image src='../../ios/icon_xingbie@2x.png'></image>
+    </view>
+    <view class="left text">
+      <text decode="{{true}}">性&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;别</text>
+    </view>
+    <view class="left input">
+      <input type="text" bindblur='getInput' data-name="sex" placeholder='请输入性别'></input>
+    </view>
+  </view>
+  <view class='content_list'>
+    <view class="img left">
+      <image src='../../ios/icon_haoma@2x.png'></image>
+    </view>
+    <view class="left text">
+      <text decode="{{true}}">身&nbsp;份&nbsp;证&nbsp;号</text>
+    </view>
+    <view class="left input">
+      <input type="text" bindblur='getInput' data-name="idcard" placeholder='请输入身份证18位号码'></input>
+    </view>
+  </view>
+  <view class='content_list'>
+    <view class="img left">
+      <image src='../../ios/icon_shenfenzheng@2x.png'></image>
+    </view>
+    <view class="left text">
+      <text decode="{{true}}">身份证地址</text>
+    </view>
+    <view class="left input">
+      <input type="text" bindblur='getInput' data-name="addr" placeholder='请输入身份证地址'></input>
+    </view>
+  </view>
+  <view class='content_list'>
+    <view class="img left">
+      <image src='../../ios/icon_dizhi_1@2x.png'></image>
+    </view>
+    <view class="left text">
+      <text decode="{{true}}">居&nbsp;住&nbsp;地&nbsp;址</text>
+    </view>
+    <view class="left input">
+      <input type="text" bindblur='getInput' data-name="nowAddr" placeholder='请输入现居住地址'></input>
+    </view>
+  </view>
+  <view class='content_list'>
+    <view class="img left">
+      <image src='../../ios/iocn_shouji@2x.png'></image>
+    </view>
+    <view class="left text">
+      <text decode="{{true}}">手&nbsp;机&nbsp;号&nbsp;码</text>
+    </view>
+    <view class="left input">
+      <input type="text" bindblur='getInput' data-name="phone" placeholder='请输入11位手机号码'></input>
+    </view>
+  </view>
+  <view class='content_list'>
+    <view class="img left">
+      <image src='../../ios/iocn_zuoji@2x.png'></image>
+    </view>
+    <view class="left text">
+      <text decode="{{true}}">座&nbsp;机&nbsp;号&nbsp;码</text>
+    </view>
+    <view class="left input">
+      <input type="text" bindblur='getInput' data-name="telephone" placeholder='请输入座机号码'></input>
+    </view>
+  </view>
+</view>
+
+<!--  上传图片区 -->
+<view class="up_img">
+  <view class="card">
+    <view class="card_title">
+      身份证原件照片
+    </view>
+    <view class="card_img">
+      <view class="left card_z">
+        <view class="card_z_img">
+          <image src="{{img.zm}}" data-name="zm"  bindtap='updateImg'></image>
+        </view>
+        <view class="card_z_title">
+          正面
+        </view>
+      </view>
+      <view class="left card_z">
+        <view class="card_z_img" >
+          <image  src="{{img.fm}}" data-name="fm"  bindtap='updateImg'></image>
+        </view>
+        <view class="card_z_title">
+          反面
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <view class="_card">
+    <view class="card_title">
+      手持身份证照片
+    </view>
+    <view class="_card_img">
+      <view class="left _card_s">
+        <view class=" _card_z_img">
+          <image src="{{img.sc}}" data-name="sc"  bindtap='updateImg'></image>
+        </view>
+      </view>
+      <view class="left _card_sc">
+        <view class=" _card_s_img">
+          <view class="left sl">示例:</view>
+          <view class="left sl_img">
+             <image  src='../../ios/img_shili@2x.png'></image>
+          </view>
+        </view>
+      </view>
+     
+    </view>
+    <view style="margin-left:18rpx;">
+      *请确保"身份证"相关信息全部清晰
+
+    </view>
+    <view style="margin-left:18rpx;margin-top:20rpx;">
+      *请露出您的手臂
+      
+    </view>
+  </view>
+  
+</view>
+
+
+<view class="btn">
+  <button bindtap='getNext'>下一步</button>
+  </view>

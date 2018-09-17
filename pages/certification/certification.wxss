@@ -1,0 +1,124 @@
+.content{
+  width:100%;
+  height:700rpx;
+  padding-top:30rp;
+  color:rgb(68,68,68);
+}
+.content_list{
+  width: 87%;
+  height:80rpx;
+  margin-left:5%;
+  margin-top: 15rpx;
+  line-height: 80rpx;
+  font-size:30rpx;
+  padding-left:30rpx;
+  border-bottom: solid 1px rgb(204,204,204);
+}
+image{
+  width: 100%;
+  height:100%;
+}
+.text{
+  margin-left: 20rpx;
+
+}
+.img{
+  padding-top: 10rpx;
+  width:50rpx;
+  height:60%;
+}
+.input{
+  margin-left: 20rpx;
+  height:100%;
+}
+input{
+  height: 100%;
+}
+
+.up_img{
+  width:100%;
+  height:960rpx;
+  border-top:solid 8px rgb(242,242,242);
+  border-bottom: solid 1px rgb(204,204,204);
+}
+.card{
+  color:rgb(68,68,68);
+  width:90%;
+  height:370rpx;
+  margin-top:20rpx;
+  font-size: 30rpx;
+  margin-left:5%;
+  border-bottom: solid 2px rgb(242,242,242);
+}
+._card{
+  width:90%;
+  height:370rpx;
+  color:rgb(68,68,68);
+  margin-top:30rpx;
+  font-size: 30rpx;
+  margin-left:5%;
+}
+.card_title{
+
+}
+.card_img{
+  width:100%;
+  height:400rpx;
+  
+  margin-top: 40rpx;
+}
+._card_img{
+  width:100%;
+  height:330rpx;
+  margin-top: 40rpx;
+}
+.card_z{
+  width:50%;
+}
+.card_z_img{
+  width:90%;
+  margin-left: 5%;
+  height:180rpx;
+}
+._card_s{
+  width:40%;
+}
+._card_sc{
+  width:60%;
+}
+.sl{
+  height:100%;
+}
+.sl_img{
+  width:70%;
+  margin-left: 5%;
+  height:100%;
+}
+._card_z_img{
+  width:80%;
+  margin-left: 5%;
+  height:300rpx;
+}
+._card_s_img{
+  width:100%;
+  margin-left: 5%;
+  height:300rpx;
+}
+.card_z_title{
+  margin-top: 30rpx;
+  text-align: center;
+}
+.btn{
+  width: 100%;
+  height:180rpx;
+}
+.btn button{
+  background: rgb(205,21,49);
+  color: #fff;
+ 
+  width:90%;
+  line-height: 80rpx;
+  margin-left:5%; 
+  height:80rpx;
+  margin-top: 40rpx;
+}

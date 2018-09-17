@@ -1,0 +1,125 @@
+/* pages/my/my.wxss */
+
+.heared {
+  width: 100%;
+  height: 360rpx;
+  background: #fff;
+  margin-bottom: 20rpx;
+}
+
+.heared .box {
+  box-sizing: border-box;
+  padding-top: 60rpx;
+  text-align: center;
+}
+
+.heared .box .tu {
+  width: 160rpx;
+  height: 160rpx;
+  border-radius: 50%;
+  background: #ccc;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.heared .box .tu image {
+  width: 100%;
+  height: 100%;
+}
+
+.heared .box .text {
+  margin-top: 22rpx;
+  font-size: 28rpx;
+  color: #292624;
+}
+
+.section {
+  background: #fff;
+  display: flex;
+  justify-content: space-around;
+  font-size: 30rpx;
+  color: #292624;
+  height: 100rpx;
+  line-height: 100rpx;
+  margin-bottom: 20rpx;
+}
+
+.section text {
+  color: #ff4e00;
+}
+
+.money {
+  background: #fff;
+  box-sizing: border-box;
+  padding: 20rpx 60rpx;
+  margin-bottom: 20rpx;
+}
+
+.money .button {
+  text-decoration: underline;
+  text-align: right;
+  font-size: 22rpx;
+}
+
+.money .bottom {
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  font-size: 30rpx;
+  margin-top: 45rpx;
+  margin-bottom: 30rpx;
+}
+
+.data {
+  background: #fff;
+  padding: 0 60rpx;
+}
+
+.data navigator {
+  display: flex;
+  justify-content: space-between;
+  padding: 26rpx 0;
+  border-bottom: 1rpx solid #eee;
+}
+
+.data navigator:last-child {
+  border-bottom: 1rpx dashed #b5b5b5;
+}
+
+.data .left {
+  font-size: 30rpx;
+  color: #292624;
+}
+
+.data .right {
+  font-size: 24rpx;
+  color: #b5b5b5;
+}
+
+.foorder {
+  background: #fff;
+  padding: 66rpx 60rpx 0;
+  font-size: 20rpx;
+  margin-bottom: 20rpx;
+  text-align: center;
+}
+
+.foorder .invitation {
+  width: 220rpx;
+  height: 220rpx;
+  background: #cccc;
+  margin: 0 auto 44rpx;
+}
+
+.foorder .text:nth-child(3) {
+  padding: 20rpx 0;
+  border-bottom: 1rpx dashed #b5b5b5;
+}
+.foorder .text:nth-child(4) {
+  padding: 20rpx 0 66rpx  ;
+}
+
+image {
+  width: 100%;
+  height: 100%;
+}

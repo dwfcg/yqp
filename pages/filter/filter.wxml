@@ -1,0 +1,34 @@
+<!--<view class="swiper-tab">
+  <view class="swiper-tab-list {{currentTab==0 ? 'on' : ''}}" data-current="0" bindtap="swichNav">现货</view>
+  <view class="swiper-tab-list {{currentTab==1 ? 'on' : ''}}" data-current="1" bindtap="swichNav">预售</view>
+  <view class="swiper-tab-list {{currentTab==2 ? 'on' : ''}}" data-current="2" bindtap="swichNav">定制</view>
+  <view class="swiper-tab-list {{currentTab==3 ? 'on' : ''}}" data-current="3" bindtap="swichNav">尾货</view>
+</view>
+<view class='line'></view>-->
+<view  class="swiper-box" duration="300" style="" bindchange="bindChange"style="margin-top:20rpx;">
+ 
+    <view class="nav_left">
+      <block wx:for="{{cats}}">
+        <view class="style nav_left_items {{curNav == item.catId ? 'active' : ''}}" bindtap="switchRightTab" data-index="{{index}}" data-id="{{item.catId}}" >
+          <text class='sort' >{{item.catName}} <text style="color:#ff0000;font-size:30rpx;">{{catName[item.catId]==null?'':catName[item.catId]}}</text></text>
+          <text class='li'> ></text>
+        </view>
+        <view class="nav_right" style="{{showSon[index]==1?'':'display:none;'}}">
+          <block  wx:for="{{item.son}}">
+            <view class="nav_left_items style " style="margin-left:30rpx;padding-left:10rpx;">
+                <view class="{{aCats[item.parentId]==item.catId ?'on':''}}" data-parent="{{item.parentId}}" data-id="{{item.catId}}" data-type="{{item.type}}" data-name="{{item.catName}}" bindtap='activeCats'>{{item.catName}}</view>
+            </view>
+          </block>
+    
+          </view>
+      </block>
+    </view>
+    
+
+  
+  
+</view>
+
+<view style="height:110rpx;">
+</view>
+<view class='bottom_line' bindtap='sure'>确认</view>

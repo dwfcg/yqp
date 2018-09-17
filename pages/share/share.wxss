@@ -1,0 +1,132 @@
+.box{
+  background: #ccc;
+   color:rgb(68, 68, 68);
+  height:1000rpx;
+}
+.head{
+  background: #fff;
+  margin-top:34rpx;
+  padding-left:30rpx;
+
+  height: 500rpx;
+  
+}
+.top_title{
+  display:block;
+  font-size:36rpx;
+}
+.list_title{
+  display:block;
+  font-size: 28rpx;
+  margin-top:30rpx;
+}
+.body{
+  background: #fff;
+  margin-top:1rpx;
+  height:510rpx;
+  padding-left:30rpx;
+}
+.body_top{
+  display: block;
+  padding-top:38rpx;
+  font-size:36rpx;
+  
+}
+.share{
+  margin-top:51rpx;
+  height:80rpx;  
+}
+.share{
+  margin-top:51rpx;
+  height:80rpx;
+  margin-left:13rpx;
+}
+.share_list{
+  width:80rpx;
+  height:80rpx;
+
+  margin-right:66rpx;
+}
+.share_list image{
+  width:100%;
+  height:100%;
+  border-radius: 50%;
+}
+.money{
+  margin-left:-30rpx;
+  margin-top:20rpx;
+  height:65rpx;  
+}
+.money_list{
+ font-size: 28rpx;
+ width: 20%;
+ text-align: center;
+}
+.right_img{
+  height:40rpx;
+  width:690rpx;
+}
+.right{
+  width:40rpx;
+  height:40rpx;
+  margin-right:20rpx;
+}
+image{
+ width:100%;
+  height:100%;
+}
+.body_foot{
+  margin-top:50rpx;
+   font-size:28rpx;
+}
+.yj_top{
+  display: block;
+ 
+  color:rgb(255,0,0);
+}
+.xd{
+  margin-left:98rpx;
+}
+.yq{
+  height:60rpx;
+  font-size:32rpx;
+  margin-left:30rpx;
+  line-height: 60rpx;
+}
+.bottom{
+  background: #fff;
+  height:600rpx;
+}
+.title{
+  margin-left:30rpx;
+  font-size:28rpx;
+  padding-top:22rpx;
+}
+.mycode{
+  width:100%;
+  height:50rpx;
+}
+.tblin_items_txt{
+  width:200rpx;
+  height:50rpx;
+  text-align: center;
+  border: dotted 1rpx #000;
+   border-radius: 10rpx;
+}
+.code{
+  width:450rpx;
+  height:50rpx;
+  text-align: center;
+  margin-left:150rpx;
+}
+.tblin_items_btn{
+  width:180rpx;
+  text-align: center;
+  border-radius: 10rpx;
+  line-height: 50rpx;
+  height:50rpx;
+  font-size:28rpx;
+  margin-left:20rpx;
+  background: #cd0e28;
+  color:#fff;
+  }

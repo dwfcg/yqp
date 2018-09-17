@@ -1,0 +1,31 @@
+<view class="box">
+  <view class="shop">
+    <text>退货商品</text>
+    <view class="img">
+      <image src='{{goods.goodsImg}}'></image>
+    </view>
+    <view class="money">
+       <text >退款金额：{{order.goodsMoney}}元</text>
+    </view>
+   
+  </view>
+  <view class="refund">
+    <view class="refundTitle">
+      <text>退款说明</text>
+    </view>
+    <view class="area">
+      <textarea class="_text" maxlength="100" bindinput='getInput' data-name="scope"  placeholder="请输入退款说明" />
+    </view>
+    <view class="input">
+      <view class="left">
+        <text>确认取货地址:</text>
+      </view>
+      <view class="left">
+        <input type="text" value="{{order.userAddress}}" placeholder="请确认取货地址"></input>
+      </view>
+    </view>
+    <view class="btn" style="clear:both;">
+        <button  bindtap='goRefund'>提交</button>
+    </view>
+  </view>
+</view>

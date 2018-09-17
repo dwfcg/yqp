@@ -1,0 +1,26 @@
+<view class="show">
+    <scroll-view scroll-y="true" bindscrolltolower="searchScrollLower">  
+      <view class="showList" wx:for="{{shops}}" wx:for-index="id" wx:for-item="item">
+      <view class='img left'>
+        <image src='https://www.jz2025.com/{{item.imgPath}}'></image>
+      </view>
+      <view class="content left">
+        <view class="title">
+          <text>{{item.goodsName}}</text>
+        </view>
+        <view class="pro">
+          <progress percent="{{item.saleNum/item.targetNumberone*100}}" color="#cd1531" active />
+        </view>
+        <view class="mb">
+          <view class="left"><text>目标：{{item.targetNumberone}}双</text></view>
+          <view class="right"><text>达成：{{item.saleNum}}%</text></view>
+        </view>
+        <view class="gobuy">
+          <view class="left money"><text>¥</text><text>{{item.goodsPriceone}}</text></view>
+          <view class="right"><button class="buyBtn" data-id="{{item.goodsId}}" bindtap="addGoods">去一起批</button></view>
+        </view>
+      </view>
+    </view>
+  </scroll-view> 
+  
+  </view>

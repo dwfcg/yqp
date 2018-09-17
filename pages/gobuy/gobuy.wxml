@@ -1,0 +1,119 @@
+<view class="top">
+  <view class="left">
+    <view class="">
+      <text>李星</text><text id="phone">15474553016</text>
+    </view>
+    <view id="address">
+      <text>成都市锦江区航天科技大厦38楼成都市锦江区 航天科技大厦38楼</text>
+    </view>
+  </view>
+  <view class="right">
+  </view>
+</view>
+<view class='show'>
+  <checkbox-group>
+    <view class='showList'>
+      <view class="check left">
+        <checkbox checked="{{checked}}"></checkbox>
+      </view>
+      <view class="left">
+        <image class="imgShow" src="../images/1.jpg"></image>
+      </view>
+      <view class="left l_ti">
+        <view class="title">
+          <text>2018年春新款欧美真皮平鞋女鞋平底单鞋</text>
+        </view>
+        <view class="l_bm">
+          <view class="left">
+            <view class="l_bm_size">
+              <text>黑色  36码</text>
+            </view>
+            <view class="red">
+              <text>¥16</text>
+            </view>
+          </view>
+          <view class="right">
+            <view class="stepper">  
+              <!-- 减号 -->  
+              <text class="{{minusStatus}}" bindtap="bindMinus">-</text>  
+              <!-- 数值 -->  
+              <input type="number" bindchange="bindManual" value="{{num}}" />  
+              <!-- 加号 -->  
+              <text class="normal" bindtap="bindPlus">+</text>  
+            </view> 
+          </view>
+        </view>
+      </view>
+    </view>
+
+    <view class='showList'>
+      <view class="check left">
+        <checkbox id="2" checked="{{checked}}"></checkbox>
+      </view>
+      <view class="left">
+        <image class="imgShow" src="../images/1.jpg"></image>
+      </view>
+      <view class="left l_ti">
+        <view class="title">
+          <text>2018年春新款欧美真皮平鞋女鞋平底单鞋</text>
+        </view>
+        <view class="l_bm">
+          <view class="left">
+            <view class="l_bm_size">
+              <text>黑色  36码</text>
+            </view>
+            <view class="red">
+              <text>¥16</text>
+            </view>
+          </view>
+          <view class="right">
+            <view class="stepper">  
+              <!-- 减号 -->  
+              <text class="{{minusStatus}}" bindtap="bindMinus">-</text>  
+              <!-- 数值 -->  
+              <input type="number" bindchange="bindManual" value="{{num}}" />  
+              <!-- 加号 -->  
+              <text class="normal" bindtap="bindPlus">+</text>  
+            </view> 
+          </view>
+        </view>
+      </view>
+    </view>
+  </checkbox-group>
+</view>
+
+<view class="bottom">
+  <view class="list">
+    <view class="left">
+      商品总额
+    </view>
+    <view class="right red">
+      ¥160
+    </view>
+  </view>
+  <view class="list">
+    <view class="left">
+      累计折扣
+    </view>
+    <view class="right">
+      - ¥10
+    </view>
+  </view>
+  <view class="list">
+    <view class="left">
+      运费
+    </view>
+    <view class="right">
+      ¥10
+    </view>
+  </view>
+  <view class="Blist">
+    
+    <view class="right bRight">
+      <view>确认支付</view>
+    </view>
+    <view class="right" style="margin-right:20rpx;">
+    实付金额：<text class="red" style='font-size:50rpx;'>¥160</text>
+    </view>
+  </view>
+</view>

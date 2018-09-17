@@ -1,0 +1,8 @@
+.box{
+  font-size:30rpx;
+}
+.title{
+  margin-top:30rpx;
+  font-weight: bold;
+  margin-bottom: 18rpx;
+}

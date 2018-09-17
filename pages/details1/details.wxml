@@ -1,0 +1,81 @@
+<!--pages/details/details.wxml-->
+
+<view class='conten'>
+  <view class='heard'>
+    <view class='tu'>
+      <image></image>
+    </view>
+    <view class='money'>
+      <view class='mone1'>￥
+        <text>100</text>
+      </view>
+      <view class='mone2'>已定制
+        <text>0</text>件
+      </view>
+    </view>
+    <view class='name'>2018秋冬新款磨砂皮过膝靴</view>
+
+  </view>
+  <view class='demand'>
+    <view>生产日期：
+      <text>3-6</text>天
+    </view>
+    <view class='range'>可制定范围：
+      <text>筒高、筒围、跟高</text>
+    </view>
+    <view class='top'>商品基本信息:
+    </view>
+    <view class='bottom'>
+      <view>货号:
+        <text>123</text>
+      </view>
+      <view>适用年龄:
+        <text>123</text>
+      </view>
+      <view>材质:
+        <text>123</text>
+      </view>
+      <view>里料材质:
+        <text>123</text>
+      </view>
+      <view>风格:
+        <text>123</text>
+      </view>
+      <view>适合季节:
+        <text>123</text>
+      </view>
+      <view>跟高:
+        <text>123</text>
+      </view>
+      <view>鞋垫材质:
+        <text>123</text>
+      </view>
+
+    </view>
+
+
+  </view>
+
+  <view class='box1'>
+    <view class='shot'>
+    <view class='top'>商品介绍</view>
+    <view class='text'>
+      <image src=''></image>
+    </view>
+  </view>
+  </view>
+
+<view class='box1'>
+  <view class='shot'>
+    <view class='top'>商品详情</view>
+    <view class='tu'>
+      <image src=''></image>
+    </view>
+  </view>
+</view>
+</view>
+
+
+<view id='bottom'>
+  <button id='button'>立即拿样</button>
+</view>

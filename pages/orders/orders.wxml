@@ -1,0 +1,298 @@
+<!--pages/orders/orders.wxml
+<view class='page_row' bindtap="suo">
+  <view class="search">
+    <view class="df search_arr">
+      <icon class="searchcion" size='20' type='search'></icon>
+      <input placeholder-class="phcolor" disabled placeholder="在这里搜索整个商店" value="{{searchValue}}" />
+    </view>
+  </view>
+</view>-->
+<view class="swiper-tab">
+  <view class="swiper-tab-list {{currentTab==0 ? 'on' : ''}}" data-current="0" bindtap="swichNav">全部</view>
+  <view class="swiper-tab-list {{currentTab==1 ? 'on' : ''}}" data-current="1" bindtap="swichNav">待付款</view>
+ <!-- <view class="swiper-tab-list {{currentTab==2 ? 'on' : ''}}" data-current="2" bindtap="swichNav">待分享</view>-->
+  <view class="swiper-tab-list {{currentTab==3 ? 'on' : ''}}" data-current="3" bindtap="swichNav">待确认</view>
+  <view class="swiper-tab-list {{currentTab==4 ? 'on' : ''}}" data-current="4" bindtap="swichNav">待评价</view>
+  <view class="swiper-tab-list {{currentTab==5 ? 'on' : ''}}" data-current="5" bindtap="swichNav">退货/售后</view>
+</view>
+
+<!-- 全部订单 -->
+<view class='together'>
+ <image src='../../images/together.png'></image>
+
+ 
+</view>
+<swiper current="{{currentTab}}" class="swiper-box" duration="300" style="height:{{winHeight - 41}}px" bindchange="bindChange">
+  <swiper-item>
+  <view style='{{ordersAll.length==0?"display:none;":""}}'>
+    <scroll-view scroll-y="true" style="height:{{winHeight - 41}}px">
+         
+      <view wx:for="{{ordersAll}}">
+        <view class='share' >
+      <view class='details' wx:for="{{item.ordergoods}}" wx:for-item="goods">
+        <view class='pics'>
+          <image style='width:100%;height:100%' src='{{goods.goodsImg}}'></image>
+        </view>
+        <view class="goodsName">
+          <text class='titles'>{{goods.goodsName}}</text>
+        </view>
+        <view style='height:75rpx;'>
+          <text class='information'>{{goods.color}}  {{goods.size}}码</text>
+        </view>
+        <view>
+          <text class='price'>￥{{goods.goodsPrice}}</text>
+          <text class='num'>x{{goods.goodsNum}}</text>
+        </view>
+      </view>
+      <view class='total'>
+        <text>共{{item.ordergoods.length}}件商品\t  需付款:¥{{item.goodsMoney}}</text>
+      </view>
+      <view class='status'>
+        <block wx:if="{{item.orderStatus == -2}}">
+         <view class='text'></view>
+          <view class='cancel' data-orderNo="{{item.orderNo}}" bindtap='delOrders'>取消订单</view>
+          <view class='invite' data-orderNo="{{item.orderNo}}" bindtap='pay'>去支付</view>
+        </block>
+        <block wx:elif="{{item.orderStatus == 0}}">
+          <view class='text'>
+            <text>已付款，满量发货</text>
+          </view>
+          <view class='cancel' bindtap="refund" data-no="{{item.orderNo}}">申请退款</view>
+          <view class='invite' bindtap='tsfh'>提醒发货</view>
+        </block>
+        <block wx:elif="{{item.orderStatus == 1}}">
+          <view class='text'>
+            <text>已发货</text>
+          </view>
+          <view class='cancel' bindtap="refund" data-no="{{item.orderNo}}">申请退款</view>
+          <view class='invite' data-no="{{item.orderNo}}" bindtap='qrsh'>确认收货</view>
+        </block>
+        <!--
+        <view class='text'>
+          <text>进行中，还差20双</text>
+        </view>
+        <view class='cancel'>取消订单</view>
+        <view class='invite'>邀请友商一起批</view>-->
+      </view>
+    </view>
+      
+      </view>
+    
+    </scroll-view>
+   </view>
+    
+    <view class='none'>
+      
+    </view>
+  </swiper-item>
+  <swiper-item>
+    <view style='{{ordersAll.length==0?"display:none;":""}}'>
+    <scroll-view scroll-y="true" style="height:{{winHeight - 41}}px">
+         
+      <view wx:for="{{ordersAll}}">
+        <view class='share' >
+      <view class='details' wx:for="{{item.ordergoods}}" wx:for-item="goods" >
+        <view class='pics'>
+          <image style='width:100%;height:100%' src='{{goods.goodsImg}}'></image>
+        </view>
+        <view class="goodsName">
+          <text class='titles'>{{goods.goodsName}}</text>
+        </view>
+        <view style='height:75rpx;'>
+          <text class='information'>{{goods.color}}  {{goods.size}}码</text>
+        </view>
+        <view>
+          <text class='price'>￥{{goods.goodsPrice}}</text>
+          <text class='num'>x{{goods.goodsNum}}</text>
+        </view>
+      </view>
+      <view class='total'>
+        <text>共{{item.ordergoods.length}}件商品\t  需付款:¥{{item.goodsMoney}}</text>
+      </view>
+      <view class='status'>
+        <view class='text'>
+          <view bindtap="bindSelectAll" class="my-sel">
+          <!--
+            <icon wx:if="{{selectedAllStatus}}" type="success_circle" size="20" class="l-mycheck" />
+            <icon wx:else type="circle" size="20" class="l-mycheck" />
+            <text>合并支付</text>-->
+          </view>
+        </view>
+        <view class='cancel' data-orderNo="{{item.orderNo}}" bindtap='delOrders'>取消订单</view>
+        <view class='invite' data-orderNo="{{item.orderNo}}" bindtap='pay'>去支付</view>
+      </view>
+    </view>
+      
+      </view>
+    
+    </scroll-view>
+   </view>
+
+    
+  </swiper-item>
+  <swiper-item>
+    <view class='share'>
+      <view class='details'>
+        <view class='pics'>
+          <image src=''></image>
+        </view>
+        <view>
+          <text class='titles'>2018年欧美真皮平鞋女鞋平底单鞋</text>
+        </view>
+        <view>
+          <text class='information'>白色  38码</text>
+        </view>
+        <view>
+          <text class='price'>￥13</text>
+          <text class='num'>x3</text>
+        </view>
+      </view>
+      <view class='total'>
+        <text>共1件商品\t  需付款:¥160.00</text>
+      </view>
+      <view class='status'>
+        <view class='text'>
+          <text>进行中，还差20双</text>
+        </view>
+        <view class='cancel'>取消订单</view>
+        <view class='invite'>邀请友商一起批</view>
+      </view>
+    </view>
+  </swiper-item>
+  <swiper-item>
+
+  <view style='{{ordersAll.length==0?"display:none;":""}}'>
+    <scroll-view scroll-y="true" style="height:{{winHeight - 41}}px">
+         
+      <view wx:for="{{ordersAll}}" >
+        <view class='share' >
+      <view class='details' wx:for="{{item.ordergoods}}" wx:for-item="goods" >
+        <view class='pics'>
+          <image style='width:100%;height:100%' src='{{goods.goodsImg}}'></image>
+        </view>
+        <view class="goodsName">
+          <text class='titles'>{{goods.goodsName}}</text>
+        </view>
+        <view style='height:75rpx;'>
+          <text class='information'>{{goods.color}}  {{goods.size}}码</text>
+        </view>
+        <view>
+          <text class='price'>￥{{goods.goodsPrice}}</text>
+          <text class='num'>x{{goods.goodsNum}}</text>
+        </view>
+      </view>
+      <view class='total'>
+        <text>共{{item.ordergoods.length}}件商品\t  已付款:¥{{item.goodsMoney}}</text>
+      </view>
+      <view class='status'>
+        <block wx:if="{{item.orderStatus == 0}}">
+            <view class='text'>
+              <text>已付款，满量发货</text>
+            </view>
+            <view class='cancel' bindtap="refund" data-no="{{item.orderNo}}">申请退款</view>
+            <view class='invite' bindtap='tsfh'>提醒发货</view>
+          </block>
+          <block wx:elif="{{item.orderStatus== 1}}">
+            <view class='text'>
+              <text>已发货</text>
+            </view>
+            <view class='cancel' bindtap="refund" data-no="{{item.orderNo}}">申请退款</view>
+            <view class='invite' data-no="{{item.orderNo}}" bindtap='qrsh'>确认收货</view>
+          </block>
+       
+      </view>
+    </view>
+      
+      </view>
+    
+    </scroll-view>
+   </view>
+
+  </swiper-item>
+  <swiper-item>
+
+  <view style='{{ordersAll.length==0?"display:none;":""}}'>
+    <scroll-view scroll-y="true" style="height:{{winHeight - 41}}px">
+         
+      <view wx:for="{{ordersAll}}">
+        <view class='share' >
+      <view class='details' wx:for="{{item.ordergoods}}" wx:for-item="goods" >
+        <view class='pics'>
+          <image style='width:100%;height:100%' src='{{goods.goodsImg}}'></image>
+        </view>
+        <view class="goodsName">
+          <text class='titles'>{{goods.goodsName}}</text>
+        </view>
+        <view style='height:75rpx;'>
+          <text class='information'>{{goods.color}}  {{goods.size}}码</text>
+        </view>
+        <view>
+          <text class='price'>￥{{goods.goodsPrice}}</text>
+          <text class='num'>x{{goods.goodsNum}}</text>
+        </view>
+      </view>
+      <view class='total'>
+        <text>共{{item.ordergoods.length}}件商品\t  已付款:¥{{item.goodsMoney}}</text>
+      </view>
+      <view class='status'>
+        <view class='text'>
+          <text>已确认</text>
+        </view>
+        <view class='cancel' bindtap='goComment' data-no="{{item.orderNo}}">去评价</view>
+        <view class='invite'>去补货</view>
+      </view>
+    </view>
+      
+      </view>
+    
+    </scroll-view>
+   </view>
+
+  
+    
+  </swiper-item>
+  <swiper-item>
+  <view style='{{ordersAll.length==0?"display:none;":""}}'>
+    <scroll-view scroll-y="true" style="height:{{winHeight - 41}}px">
+         
+      <view wx:for="{{ordersAll}}">
+        <view class='share' >
+      <view class='details' wx:for="{{item.ordergoods}}" wx:for-item="goods" >
+        <view class='pics'>
+          <image style='width:100%;height:100%' src='{{goods.goodsImg}}'></image>
+        </view>
+        <view class="goodsName">
+          <text class='titles'>{{goods.goodsName}}</text>
+        </view>
+        <view style='height:75rpx;'>
+          <text class='information'>{{goods.color}}  {{goods.size}}码</text>
+        </view>
+        <view>
+          <text class='price'>￥{{goods.goodsPrice}}</text>
+          <text class='num'>x{{goods.goodsNum}}</text>
+        </view>
+      </view>
+      <view class='total'>
+        <text>共{{item.ordergoods.length}}件商品\t  已付款:¥{{item.goodsMoney}}</text>
+      </view>
+      <view class='status'>
+        <view class='refund'>
+          <text>退款中</text>
+        </view>
+        <view class='refund_price'>
+          <text>实付￥{{item.goodsMoney}} 申请退款金额 <text style='color:#cd0e28;'>￥{{item.goodsMoney}}</text></text>
+        </view>
+      </view>
+       <view class='courier_number'>
+        <view>填写快递单号</view>
+
+      </view>
+    </view>
+      
+      </view>
+    
+    </scroll-view>
+    </view>
+      
+  </swiper-item>
+</swiper>

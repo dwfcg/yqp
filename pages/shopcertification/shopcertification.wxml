@@ -1,0 +1,147 @@
+<view class="content">
+  <view class='content_list'>
+    <view class="img left">
+      <image src='../../ios/icon_dianpuming@2x.png'></image>
+    </view>
+    <view class="left text">
+      <text decode="{{true}}">店&nbsp;&nbsp;&nbsp;铺&nbsp;&nbsp;&nbsp;&nbsp;名</text>
+    </view>
+    <view class="left input">
+      <input type="text" bindblur='getInput' data-name="shopname" placeholder='请输入店铺名'></input>
+    </view>
+  </view>
+  <view class='content_list'>
+    <view class="img left">
+      <image src='../../ios/icon_dizhi_1@2x.png'></image>
+    </view>
+    <view class="left text">
+      <text decode="{{true}}">店&nbsp;铺&nbsp;地&nbsp;址</text>
+    </view>
+    <view class="left input">
+      <input type="text" bindblur='getInput' data-name="address" placeholder='请输入店铺地址'></input>
+    </view>
+  </view>
+  <view class='content_list'>
+    <view class="img left">
+      <image src='../../ios/icon_zhizhao@2x.png'></image>
+    </view>
+    <view class="left text">
+      <text decode="{{true}}">营业执照名</text>
+    </view>
+    <view class="left input">
+      <input type="text" bindblur='getInput' data-name="shopCardName" placeholder='请输入营业执照名'></input>
+    </view>
+  </view>
+  <view class='content_list'>
+    <view class="img left">
+      <image src='../../ios/icon_zhucehao@2x.png'></image>
+    </view>
+    <view class="left text">
+      <text decode="{{true}}">注&nbsp;&nbsp;&nbsp;册&nbsp;&nbsp;&nbsp;&nbsp;号</text>
+    </view>
+    <view class="left input">
+      <input type="text" bindblur='getInput' data-name="registnum" placeholder='请输入注册号'></input>
+    </view>
+  </view>
+ 
+</view>
+
+
+<!--  上传图片区 -->
+<view class="up_img">
+  <view class="card">
+    <view class="card_title">
+      营业执照照片
+    </view>
+    <view class="card_img">
+      <view class="left card_z">
+        <view class="card_z_img">
+          <image src="{{img.orign}}" data-name="orign"  bindtap='updateImg'></image>
+        </view>
+        <view class="card_z_title">
+          原件照片
+        </view>
+      </view>
+      <view class="left card_z">
+        <view class="card_z_img" >
+          <image src="{{img.scorign}}" data-name="scorign"  bindtap='updateImg'></image>
+        </view>
+        <view class="card_z_title">
+          手持营业执照照片
+        </view>
+      </view>
+    </view>
+  </view>
+<view class="card card1">
+    <view class="card_title">
+      租房合同原件照片
+    </view>
+    <view class="card_img">
+      <view class="left card_z">
+        <view class="card_z_img">
+          <image src="{{img.ShopRental}}" data-name="ShopRental"  bindtap='updateImg'></image>
+        </view>
+        <view class="card_z_title">
+          商铺租房合同
+        </view>
+      </view>
+      <view class="left card_z">
+        <view class="card_z_img" >
+          <image src="{{img.HousingLease}}" data-name="HousingLease"  bindtap='updateImg'></image>
+        </view>
+        <view class="card_z_title">
+          住房租房合同
+        </view>
+      </view>
+      
+    </view>
+    <view style="margin-left:18rpx;margin-top:10rpx;color:rgb(205,21,49);font-size:25rpx;">
+        *如商铺，房租是自己购买请上传房产证或者购买合同
+      </view>
+  </view>
+  
+  <view class="card ">
+    <view class="card_title" >
+      店铺实拍照片
+    </view>
+    <view class="card_img">
+      <view class="left card_shop">
+        <view class="card_shop_img">
+          <image src="{{img.mp}}" data-name="mp"  bindtap='updateImg'></image>
+        </view>
+        <view class="card_z_title">
+          门牌
+        </view>
+      </view>
+      <view class="left card_shop">
+        <view class="card_shop_img">
+          <image src="{{img.dz}}" data-name="dz"  bindtap='updateImg'></image>
+        </view>
+        <view class="card_z_title">
+          店招
+        </view>
+      </view>
+      <view class="left card_shop">
+        <view class="card_shop_img" >
+          <image src="{{img.dn}}" data-name="dn"  bindtap='updateImg'></image>
+        </view>
+        <view class="card_z_title">
+          店内
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="bottom">
+    <view class="card_title" >
+      店铺实际经营范围
+    </view>
+    <view class="area">
+    <textarea class="_text" maxlength="100" bindblur='getInput' data-name="scope"  placeholder="请输入经营范围，限100字" />
+    </view>
+  </view>
+
+  <view class="btn">
+  <button bindtap='getNext'>提交审核</button>
+  </view>
+</view>
+

@@ -1,0 +1,200 @@
+<!-- 搜索框区 -->
+<view class="search">
+  <input class="search_input" data-key="search" bindchange="search" placeholder-class="phcolor" placeholder="搜索喜欢的商品" ></input>
+ 
+</view>
+
+<!--图片展示-->
+<view class="imgShow">
+   <swiper class="swiper" indicator-dots="true" autoplay="true" interval="5000" duration="1000">    
+      <block wx:for="{{img.banner}}" wx:for-index="index"> 
+      
+        <swiper-item>    
+          <image src='{{item}}'></image>
+        </swiper-item>    
+      </block>    
+    </swiper>
+  
+</view>
+
+<!--  <button style="height:20px;" open-type="contact" /> -->
+<!-- 分类展示 -->
+<view class="con">
+
+  <view class="con_icon left red">
+    <view class="br">
+      <image src='{{img.ico.gc}}'></image>
+    </view>
+    <view class="con_icon_title">工厂直供</view>
+  </view>
+  <view class="con_icon left red">
+    <view class="br">
+      <image src='{{img.ico.th}}'></image>
+    </view>
+    <view class="con_icon_title">30天退换</view>
+  </view>
+  <view class="con_icon left red">
+    <view class="br">
+      <image src='{{img.ico.sh}}'></image>
+    </view>
+    <view class="con_icon_title">送货到店</view>
+  </view>
+  <view class="con_icon left red">
+    <view class="br">
+     <image src='{{img.ico.yq}}'></image>
+    </view>
+    <view class="con_icon_title">一件起批</view>
+  </view>
+</view>
+
+<!-- 分类图片 -->
+<view class="cl_img" >
+  <view class="left cl_l " data-temp="3" data-index="5" data-key="shopId" data-val="3" bindtap='bImg' >
+    <image class="h100" src="{{img.classifyImg.left}}"></image>
+  </view>
+  <view class="left cl_l" >
+    <view class="cl_top" data-temp="3" data-index="8" data-key="shopId" data-val="2" bindtap='bImg'>
+      <image src="{{img.classifyImg.rightTop}}"></image>
+    </view>
+    <view class="cl_bottom">
+      <view class="cl_bimg left" style="margin-right:2%;" data-temp="1" data-index="1" data-key="order" data-val="createTime" bindtap='bImg' >
+     
+        <image src='{{img.classifyImg.rightBottomLeft}}'></image>
+      </view>
+      <view class="cl_bimg left" data-temp="1" data-index="2" data-key="order" data-val="saleNum" bindtap='bImg' >
+     
+        <image src='{{img.classifyImg.rightBottomRight}}'></image>
+      </view>
+     
+      
+    </view>
+  </view>
+</view>
+<!-- 热门款式 -->
+<view class="hotType">
+  <view class="hTitle">
+    <text>热门款式</text>
+  </view>
+  <view class="Timg">
+    <view class="left Timg_l" data-temp="2" data-index="4" data-key="goodsTypeAbout" data-val="974" bindtap='bImg'>
+      <view class="Timg_title">
+        <view>明星同款</view>
+        <view class="Timg_title_b" >时尚引领、一手货源</view>
+      </view>
+
+      <view class="t_img">
+        <image src="{{img.hotType.mx}}"></image>
+      </view>
+
+    </view>
+    <view class="left Timg_l" data-temp="2" data-index="3" data-key="goodsTypeAbout" data-val="975" bindtap='bImg'>
+        <view class="Timg_title">
+          <view>大牌潮款</view>
+          <view class="Timg_title_b ">低价好货、超高性价比</view>
+        </view>
+         <view class="t_img">
+          <image src="{{img.hotType.dp}}"></image>
+        </view>
+    </view>
+
+    <view class=" left Timg_b"  data-temp="2" data-index="6" data-key="goodsType" data-val="776" bindtap='bImg'>
+      <view class="Timg_b_title">
+          <view>早秋单鞋</view>
+          <view class="Timg_b_title_b ">免费铺货</view>
+      </view>
+      <view class="t_b_img">
+          <image src="{{img.hotType.wh}}"></image>
+        </view>
+    </view>    
+    <view class=" left Timg_b" data-temp="2" data-index="9" data-key="goodsType" data-val="780" bindtap='bImg'>
+      <view class="Timg_b_title">
+          <view>精品短靴</view>
+          <view class="Timg_b_title_b ">送货到店</view>
+      </view>
+      <view class="t_b_img">
+          <image src="{{img.hotType.cx}}"></image>
+        </view>
+    </view>   
+    <view class=" left Timg_b" data-temp="2" data-index="12" data-key="goodsType" data-val="775" bindtap='bImg'>
+      <view class="Timg_b_title">
+          <view>时尚凉鞋</view>
+          <view class="Timg_b_title_b ">一件起批</view>
+      </view>
+      <view class="t_b_img">
+          <image src="{{img.hotType.lx}}"></image>
+        </view>
+    </view>   
+    <view class=" left Timg_b" data-temp="2" data-index="11" data-key="goodsType" data-val="774" bindtap='bImg'>
+      <view class="Timg_b_title">
+          <view>品质拖鞋</view>
+          <view class="Timg_b_title_b ">0库存开店</view>
+      </view>
+      <view class="t_b_img">
+          <image src="{{img.hotType.tx}}"></image>
+        </view>
+    </view>   
+  </view>
+</view>
+<!--今日热门-->
+<view class="hotToday">
+  <view class="hTitle">
+    <text>今日热门</text>
+  </view>
+
+  <!-- 遍历数据 -->
+  <view class="showList" wx:for="{{hotShops}}" wx:for-index="id" wx:for-item="item">
+    <view class='img left'>
+      <image src='{{item.imgPath}}'></image>
+    </view>
+    <view class="content left">
+      <view class="title">
+        <text>{{item.goodsName}}</text>
+      </view>
+      <view class="pro">
+        <progress percent="{{item.saleNum/item.targetNumberone*100}}" color="#cd1531" active />
+      </view>
+      <view class="mb">
+        <view class="left"><text>目标：{{item.targetNumberone}}双</text></view>
+        <view class="right"><text>达成：{{item.saleNum}}%</text></view>
+      </view>
+      <view class="gobuy">
+        <view class="left money"><text>¥</text><text>{{item.goodsPriceone}}</text></view>
+        <view class="right"><button class="buyBtn" data-id="{{item.goodsId}}" bindtap="addGoods">去一起批</button></view>
+      </view>
+    </view>
+  </view>
+
+ 
+</view>
+
+
+<!-- 邀请码界面
+<modal hidden="{{hiddenmodalput}}" title="请输入邀请码" confirm-text="提交" cancel-text="没有邀请码" bindcancel="cancel" bindconfirm="confirm">  
+    <input type='text'placeholder="请输入邀请码" bindinput="invite" class="inputInvite" auto-focus/>  
+</modal>   -->
+<!--
+<view style="height:140rpx;">
+</view>
+
+<view class="bottom">
+  <view data-index="0" bindtap='bActive' class="left icon {{bottomActive == 0?'red':''}}">
+    <view class="icon_img "><text class="iconfont icon-shouye"></text></view>
+    <view class="icon_title">首页</view>
+  </view>
+  <view data-index="1" bindtap='bActive' class="left icon {{bottomActive == 1?'red':''}}">
+    <view class="icon_img"><text class="iconfont icon-leimupinleifenleileibie"></text></view>
+    <view class="icon_title">分类</view>
+  </view>
+  <view data-index="2" bindtap='bActive' class="left icon {{bottomActive == 2?'red':''}}">
+    <view class="icon_img"><text class="iconfont icon-xinpin"></text></view>
+    <view class="icon_title">新品</view>
+  </view>
+  <view data-index="3" bindtap='bActive' class="left icon {{bottomActive == 3?'red':''}}">
+    <view class="icon_img"><text class="iconfont icon-remen"></text></view>
+    <view class="icon_title">热门</view>
+  </view>
+  <view data-index="4" bindtap='bActive' class="left icon {{bottomActive == 4?'red':''}}">
+    <view class="icon_img"><text class="iconfont icon-wode"></text></view>
+    <view class="icon_title">我的</view>
+  </view>
+</view>-->

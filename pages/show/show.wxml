@@ -1,0 +1,124 @@
+<view class="list">
+  <view class="Ltop">
+    <text>女鞋</text>
+  </view>
+  <view class="Lbottom">
+    <view class="left" data-temp="2" data-index="11" data-key="goodsType" data-val="774" bindtap='bImg'>
+      <image src='../images/tuoxie.jpg' class="Limg"></image>
+    </view>
+    <view class="left" data-temp="2" data-index="12" data-key="goodsType" data-val="775" bindtap='bImg'>
+      <image src='../images/liangxie.jpg' class="Limg"></image>
+    </view>
+    <view class="left" data-temp="2" data-index="13" data-key="goodsType" data-val="776" bindtap='bImg'>
+      <image src='../images/danxie.jpg' class="Limg"></image>
+    </view>
+    <view class="left" data-temp="2" data-index="14" data-key="goodsType" data-val="777" bindtap='bImg'>
+      <image src='../images/gaobang.jpg' class="Limg"></image>
+    </view>
+    <view class="left" data-temp="2" data-index="15" data-key="goodsType" data-val="778" bindtap='bImg'>
+      <image src='../images/fanbu.jpg' class="Limg"></image>
+    </view>
+    <view class="left" data-temp="2" data-index="16" data-key="goodsType" data-val="779" bindtap='bImg'>
+      <image src='../images/luoxue.jpg' class="Limg"></image>
+    </view>
+    <view class="left" data-temp="2" data-index="17" data-key="goodsType" data-val="780" bindtap='bImg'>
+      <image src='../images/duanxue.jpg' class="Limg"></image>
+    </view>
+    <view class="left" data-temp="2" data-index="18" data-key="goodsType" data-val="781" bindtap='bImg'>
+      <image src='../images/zhongtong.jpg' class="Limg"></image>
+    </view>
+    <view class="left" data-temp="2" data-index="19" data-key="goodsType" data-val="782" bindtap='bImg'>
+      <image src='../images/guoxi.jpg' class="Limg"></image>
+    </view>
+  </view>
+</view>
+<view class="list" style="height:600rpx;">
+  <view class="Ltop">
+    <text>热门分类</text>
+  </view>
+  <view class="Lbottom" >
+    <view class="left" data-temp="2" data-index="20" data-key="goodsStyle" data-val="783" bindtap='bImg'>
+      <image src='../images/oumei.jpg' class="Limg"></image>
+    </view>
+    <view class="left" data-temp="2" data-index="21" data-key="goodsStyle" data-val="787" bindtap='bImg'>
+      <image src='../images/fugu.jpg' class="Limg"></image>
+    </view>
+    <view class="left" data-temp="2" data-index="22" data-key="goodsStyle" data-val="785" bindtap='bImg'>
+      <image src='../images/xiuxian.jpg' class="Limg"></image>
+    </view>
+    <view class="left" data-temp="2" data-index="23" data-key="goodsStyle" data-val="784" bindtap='bImg'>
+      <image src='../images/hanban.jpg' class="Limg"></image>
+    </view>
+    <view class="left" data-temp="2" data-index="24" data-key="goodsType" data-val="953" bindtap='bImg'>
+      <image src='../images/caoliu.jpg' class="Limg"></image>
+    </view>
+    <view class="left" data-temp="2" data-index="25" data-key="goodsTypeAbout" data-val="955" bindtap='bImg'>
+      <image src='../images/jingdian.jpg' class="Limg"></image>
+    </view>
+    <view class="left" data-temp="2" data-index="26" data-key="goodsBottom" data-val="848" bindtap='bImg'>
+      <image src='../images/shushi.jpg' class="Limg"></image>
+    </view>
+    <view class="left" data-temp="2" data-index="27" data-key="goodsHigh" data-val="942" bindtap='bImg'>
+      <image src='../images/shishang.jpg' class="Limg"></image>
+    </view>
+    
+  </view>
+</view>
+<view class="list">
+  <view class="Ltop" >
+    <text>热门材质</text>
+  </view>
+  <view class="Lbottom">
+    <view class="left" data-temp="2" data-index="28" data-key="goodsVamp" data-val="861" bindtap='bImg'>
+      <image src='../images/niupi.jpg' class="Limg"></image>
+    </view>
+    <view class="left" data-temp="2" data-index="29" data-key="goodsVamp" data-val="862" bindtap='bImg'>
+      <image src='../images/niufan.jpg' class="Limg"></image>
+    </view>
+    <view class="left" data-temp="2" data-index="30" data-key="goodsVamp" data-val="863" bindtap='bImg'>
+      <image src='../images/yangpi.jpg' class="Limg"></image>
+    </view>
+    <view class="left" data-temp="2" data-index="31" data-key="goodsVamp" data-val="864" bindtap='bImg'>
+      <image src='../images/yangfan.jpg' class="Limg"></image>
+    </view>
+    <view class="left" data-temp="2" data-index="32" data-key="goodsVamp" data-val="865" bindtap='bImg'>
+      <image src='../images/caoqian.jpg' class="Limg"></image>
+    </view>
+    <view class="left" data-temp="2" data-index="33" data-key="goodsVamp" data-val="866" bindtap='bImg'>
+      <image src='../images/pu.jpg' class="Limg"></image>
+    </view>
+    <view class="left" data-temp="2" data-index="34" data-key="goodsVamp" data-val="869" bindtap='bImg'>
+      <image src='../images/wangbu.jpg' class="Limg"></image>
+    </view>
+    <view class="left" data-temp="2" data-index="35" data-key="goodsVamp" data-val="870" bindtap='bImg'>
+      <image src='../images/qipi.jpg' class="Limg"></image>
+    </view>
+    
+  </view>
+</view>
+
+<view style="height:140rpx;">
+</view>
+<!-- 最下面按钮区域 
+<view class="bottom">
+  <view data-index="0" bindtap='bActive' class="left icon {{bottomActive == 0?'red':''}}">
+    <view class="icon_img "><text class="iconfont icon-shouye"></text></view>
+    <view class="icon_title">首页</view>
+  </view>
+  <view data-index="1" bindtap='bActive' class="left icon {{bottomActive == 1?'red':''}}">
+    <view class="icon_img"><text class="iconfont icon-leimupinleifenleileibie"></text></view>
+    <view class="icon_title">分类</view>
+  </view>
+  <view data-index="2" bindtap='bActive' class="left icon {{bottomActive == 2?'red':''}}">
+    <view class="icon_img"><text class="iconfont icon-xinpin"></text></view>
+    <view class="icon_title">新品</view>
+  </view>
+  <view data-index="3" bindtap='bActive' class="left icon {{bottomActive == 3?'red':''}}">
+    <view class="icon_img"><text class="iconfont icon-remen"></text></view>
+    <view class="icon_title">热门</view>
+  </view>
+  <view data-index="4" bindtap='bActive' class="left icon {{bottomActive == 4?'red':''}}">
+    <view class="icon_img"><text class="iconfont icon-wode"></text></view>
+    <view class="icon_title">我的</view>
+  </view>
+</view>-->

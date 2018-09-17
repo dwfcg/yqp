@@ -1,0 +1,143 @@
+<!--pages/shop-details/shop-details.wxml-->
+<view class='details_pic'>
+<swiper class="swiper" indicator-dots="true" autoplay="true" interval="5000" duration="1000">    
+      <block wx:for="{{shops}}" wx:for-index="index"> 
+      
+        <swiper-item>    
+          <image src="{{item}}" class="imgTop" mode="aspectFill"/>    
+        </swiper-item>    
+      </block>    
+    </swiper>   
+
+</view>
+<view class='sales'>
+  <view class='sales-left'>
+    <view class='new_price'>￥{{shop.shops.goodsPriceone}}</view>
+    <view class='market_price'>拿样价：￥{{shop.shops.shopPrice}} </view>
+  </view>
+  <view class='sales_right'>
+    <view class='ordered'>已批：{{shop.shops.saleNum}}双</view>
+    <view class='shared'>
+      <button open-type="share"  class="shared_btn"></button>
+      <image src='../../images/shared.png'></image>
+    </view>
+  </view>
+</view>
+<view class='object'>
+  <view class='objects'>目标：{{shop.shops.targetNumberone}}双</view>
+  <view class='finished'>达成：{{shop.shops.saleNum/shop.shops.targetNumberone*100}}%</view>
+  <view class='progress'>
+    <progress percent="{{shop.shops.saleNum/shop.shops.targetNumberone*100}}" color="red" stroke-width="10" active />
+  </view>
+  <view class='name'>{{shop.shops.goodsName}} </view>
+</view>
+<view class='condition'>
+  <view class='title'>一起批、批好货、超实惠</view>
+  <view class="menu2_view" wx:for="{{arry}}" wx:key="{{arry}}" wx:for-index="idx" bindtap="btnanniu">
+    <image src="{{item.src}}" mode="widthFix" class="menu3icon" id="{{idx}}"></image>
+    <text>{{item.text}}</text>
+  </view>
+  <view class="yiqi_bottom">
+      <view class="left yiqi_bo_l">
+        <text class="left">规则：</text><view class="left yiqi_rad" style='margin-right:10rpx;' >1</view><text >参与</text>
+      </view>
+     <view class="left yiqi_bo_l" style="margin-left:35rpx;margin-right:35rpx;">
+        >
+      </view>
+      <view class="left yiqi_bo_l">
+        <view class="left yiqi_rad" style='margin-right:10rpx;' >2</view><text >邀请友商</text>
+      </view>
+      <view class="left yiqi_bo_l"  style="margin-left:35rpx;margin-right:35rpx;">
+        >
+      </view>
+      <view class="left yi_c yiqi_bo_l">
+        <view>
+          <view class="left yiqi_rad" style='margin-right:10rpx;' >3</view><text >满量发货</text>
+        </view>
+        <view style="font-size:24rpx;width:170rpx;" class='bm'>
+          (不满自动退款)
+        </view>
+        
+      </view>
+      <view></view>
+      <view></view>
+    </view>
+</view>
+<!--
+<view class='rules'>
+  <view class='play'>
+    <text class='plays'>一起批玩法</text>
+    <text class='details_rule'>详细规则></text>
+  </view>
+  <view class='course'>
+    <image src='../../images/process.png'></image>
+  </view>
+</view>-->
+
+<view class='assess'>
+  <view class='borders'></view>
+  <view class='assess_border'>
+    <text class='assess_left'>商品评价</text>
+    <text class='assess_right'>更多评价></text>
+  </view>
+  <view class='assess_details' wx:for="{{shop.comment}}">
+    <view class='users'>
+      <image src="{{item.userPhoto}}"></image>
+      <text class='names'>{{item.userName}}</text>
+    </view>
+    <view class='assess_detail'>
+      {{item.content}}
+    </view>
+  </view>
+  
+  <view class='borders'></view>
+</view>
+
+<view class='shop_details'>
+  <view class='parameter'>
+    <text class='parameter_left'>商品参数</text>
+    <text class='parameter_right'></text>
+  </view>
+  <view class="menu3_view" wx:for="{{arr}}" wx:key="{{arr}}" wx:for-index="idx">
+    <text decode="{{true}}" class='shop_left'>{{item.text1}}</text>
+    <text class='shop_right'>{{item.text}}</text>
+  </view>
+</view>
+
+  <view style="width:100%;height:100%" wx:for="{{goodsDetail}}">
+    <image style="width:100%;" mode="widthFix"src='{{item}}'></image>
+
+  </view>
+
+
+
+<view class='bottom'>
+  <view class='bottom_left'>
+    <view class='shops' bindtap='toIndex'>
+      <image src='../../images/sy.png'></image>
+    </view>
+    <!--
+    <view class='collection'>
+      <image src='../../images/collection.png'></image>
+    </view>-->
+    <view class='service'>
+    <button open-type="contact" class="contact" />
+      <image src='../../images/services.png'></image>
+    </view>
+  </view>
+  <view class='bottom_tight'>
+    <view class='samples' data-isgroup="2" data-id="{{shop.shops.goodsId}}" bindtap='addGoods'>拿样</view>
+    <view class='together' data-isgroup="1" data-id="{{shop.shops.goodsId}}" bindtap='addGoods'>一起批</view>
+  </view>
+</view>
+<view class="b1" hidden="true">
+  <view class="t_w">
+    <view class="b2">
+      <view class="v1">你有一个未达成目标的商品邀请友商一起批可以大大提高成交率哦~</view>
+      <view class="btn1" >
+       <view class='close' bindtap="b">关闭</view>
+       <view class='to_invite'>去邀请友商</view>
+      </view>
+    </view>
+  </view>
+</view>

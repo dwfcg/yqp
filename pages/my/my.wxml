@@ -1,0 +1,41 @@
+<!--pages/my/my.wxml-->
+<view class='heared'>
+  <view class='box'>
+    <view class='tu'>
+      <image src='{{userInfo.avatarUrl}}'></image>
+    </view>
+    <view class='text'>  <text>{{userInfo.nickName}}</text></view>
+  </view>
+</view>
+
+<view class='data'>
+  <navigator url=''>
+    <view class='left'>店铺资料</view>
+
+  </navigator>
+  <navigator url=''>
+    <view class='left'>提现到账</view>
+    <view class='right'>绑定提现账号></view>
+  </navigator>
+  <navigator url='../address/address'>
+    <view class='left'>收货地址</view>
+    <view class='right'>管理收货地址></view>
+  </navigator>
+  <navigator url=''>
+    <view class='left'>账号管理</view>
+  </navigator>
+  <navigator url=''>
+    <view class='left'>简制公众号</view>
+  </navigator>
+</view>
+
+<view class='foorder'>
+  <view class='invitation'>
+    <image src=''></image>
+  </view>
+<view class='text'>扫描二维码</view>
+<view class='text'>或搜索“简制”公众号关注</view>
+<view class='text'>简制公众号第一时间了解流行趋势与实体店经营秘诀</view>
+
+
+</view>

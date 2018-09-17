@@ -1,0 +1,166 @@
+.top{
+  height: 360rpx;
+  
+  margin-top: 20rpx;
+  
+}
+.status .left{
+  color:#fff;
+  margin-left:50rpx;
+}
+.imgShow{
+  height:80px;
+  width: 80px;
+ 
+  margin-left: 6px;
+}
+.title{
+  widtH:100%;
+  font-size: 30rpx;
+}
+.showList{
+  height:120px;
+}
+.l_ti{
+  width:60%;
+  margin-left: 10px;
+}
+.right image{
+  width:100rpx;
+  height:100rpx;
+  margin-top:50rpx;
+  margin-right:30rpx;
+}
+#phone{
+  padding: 20rpx;
+  margin-left: 50rpx;
+}
+#address{
+  padding-left: 20rpx;
+ 
+  font-size: 35rpx;
+}
+#name{
+  padding: 20rpx;
+}
+.status{
+  width:100%;
+  height:200rpx;
+  line-height:200rpx;
+  background: linear-gradient(to right, #fc415e , #d11835);
+}
+.bTop{
+  border-top:solid 1px #dddddd;
+  height:110rpx;
+  font-size: 30rpx;
+}
+.bLeft{
+  height:100%;
+  line-height: 110rpx;
+  padding-left: 15rpx;
+  
+}
+.bCon{
+
+  width:400rpx;
+  text-align: right;
+}
+.bRight{
+  color:#fff;
+  width:180rpx;
+  height:110rpx;
+  text-align: center;
+  line-height: 110rpx;
+  background: #cd0e28;
+}
+.count{
+  color:#cd0e28;
+  font-size:50rpx;
+}
+.ml{
+  margin-left:5px;
+}
+.bcL{
+  font-size: 25rpx;
+}
+.red{
+  color:#cd0e28 !important;
+}
+.bBottom{
+  border-top:solid 1px #dddddd;
+  height:110rpx;
+  font-size: 30rpx;
+}
+.bBtn{
+  height: 100%;
+  width:33%;
+  color:#aeaeae;
+  padding-top: 10rpx;
+  text-align: center;
+  
+}
+.w{
+  width:15px;
+}
+
+.wIco{
+  font-size: 45rpx !important;
+}
+.bFont{
+  font-size:20rpx;
+}
+.l_bm_size{
+  color:#aeaeae;
+  font-size: 28rpx;
+}
+.t-right{
+  
+  line-height: 100rpx;
+  height:100rpx;
+  font-size: 30rpx;
+  border-top: solid 1px #dddddd;
+}
+.mt40{
+  margin-top: 40rpx;
+}
+.t-right view{
+margin-right: 30rpx;
+text-align: right;
+}
+.lx{
+  font-size: 30rpx;
+  margin-top: 10rpx;
+}
+.button{
+  position: fixed;
+  bottom: 0;
+  left:0;
+  widtH:100%;
+  height:110rpx;
+  border-top:solid 1px #dddddd;
+  line-height:110rpx;
+}
+.gobuy{
+  background-color: #cd0e28;
+  color:#fff;
+  width:200rpx;
+  text-align: center;
+}
+.esc{
+   background-color: #999999;
+  color:#fff;
+  width:200rpx;
+  text-align: center;
+}
+.bottom{
+  width: 100%;
+  height:200rpx;
+}
+.Blist{
+  border-top:solid 1px #dddddd; 
+  height:80rpx;
+  line-height: 80rpx;
+  font-size: 25rpx;
+  color:#999999;
+  padding-left:20rpx;
+}

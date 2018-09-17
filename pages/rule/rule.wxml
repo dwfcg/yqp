@@ -1,0 +1,60 @@
+<view class="box">
+  <view class="rule">
+    <view class="title">
+      1：如何获得免费铺货额度？
+    </view>
+    <view class="content">
+      完成实名认证与店铺认证后，平台根据认证店铺的基础数据给以免费铺货额度。
+    </view>
+    <view class="title">
+      2：一般结算周期是多久？
+    </view>
+    <view class="content">
+     算周期为15天、30天、45天，3种结算周期，首次结算周期均为15天，
+后期根据用户店铺信用值进行结算周期增加与减少。
+    </view>
+    <view class="title">
+      3：什么店铺信用值？
+    </view>
+    <view class="content">
+     店铺信用值是根据用户是否按时结款及店铺经营中的多个维度数据的中合信用值。
+    </view>
+    <view class="title">
+      4：为什么完成店铺认证后，提示需根据第一个月进货数据审批免费铺货额度？
+    </view>
+    <view class="content">
+     平台需要根据认证店铺的基础经营数据进行大数据风险预测与评估后才能审批相应的免费铺货额度，
+没有基础数据不能进行风险预测与评估。
+    </view>
+    <view class="title">
+      5：一般免费铺货基础额度是多少？
+    </view>
+    <view class="content">
+     店铺的经营规模与进货金额不一样，所获得的免费铺货额度也不一样，
+具体额度会根据用户第一个月的进货数据与退换数据，2个数据为核心进行评估给以相应的免费铺货额度，
+如（退货率10%以下，所获得免费铺货额度大于第一个月总进货金额的75%）进货金额越高，
+退货率越低，获得免费铺货额度越高。
+    </view>
+    <view class="title">
+      6：如何提升免费铺货额度与结算周期？
+    </view>
+    <view class="content">
+      <view>  A：邀请朋友注册并使用一起批进货。</view>
+      <view> B：提高进货比例与进货金额。</view>
+      <view> C：控制退货率。</view>
+      <view> D：按时支付应结算货款。</view>
+    </view>
+    <view class="title">      
+7：我的免费铺货被关闭是什么原因
+
+    </view>
+    <view class="content">
+     <view>免费铺货额度被关闭有以下几种原因</view>
+<view>A：未按时支付应货款。</view>
+<view>B：退货率连续2个月超过30%以上。</view>
+<view>C：长时间未使用本平台进货</view>
+<view>D：连续3个月在本平台进货金额低于1000元以下。</view>
+    </view>
+
+  </view>
+</view>

@@ -1,0 +1,259 @@
+.search{
+  width:100%;
+  height:80rpx;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+.search_input{
+  width: 90%;
+  text-align: center;
+  border: solid 1px #ddd;
+  height:60rpx;
+  border-radius: 40rpx;
+  font-size: 25rpx;
+}
+
+.phcolor{
+  color:#c7c7c7;
+}
+.br image{
+  width: 70rpx;
+  height:70rpx;
+}
+.bottom{
+  width: 100%;
+  height:120rpx;
+  position:fixed;
+  bottom: 0;
+  left:0;
+  color:#c7c7c7;
+  background-color: #fff;
+  padding-top: 20rpx;
+}
+.icon{
+  text-align: center;
+  height:120rpx;
+ 
+  width:20%;
+}
+.icon_img text{
+  font-size: 50rpx;
+}
+.icon_title{
+  font-size: 30rpx;
+}
+.red{
+  color:#cd0e28;
+}
+.imgShow{
+  width: 100%;
+  height:300rpx;
+}
+.imgShow image{
+  width: 100%;
+  height:100%;
+}
+.con{
+  width: 100%;
+  height:120rpx;
+}
+.con_icon{
+  width:25%;
+  
+  padding-top:25rpx;
+  text-align: center;
+}
+.br text{
+  padding: 10rpx;
+  font-size: 40rpx;
+  border: solid 1px #cd0e28;
+  border-radius: 50%;
+}
+.con_icon_title{
+  color:black;
+  font-size:25rpx;
+ 
+}
+.cl_img{
+  width:100%;
+  height:500rpx;
+  margin-top: 20rpx;
+  padding: 10rpx;
+}
+.cl_l{
+  width:47%;
+  height: 100%;
+  padding-left:10rpx; 
+  
+}
+.cl_l image{
+  width:100%;
+  
+}
+.cl_top{
+  height:50%;
+}
+.cl_top image{
+  height:100%;
+}
+.cl_bottom{
+  margin-top: 10rpx;
+  height:48%;
+  width: 100%;
+}
+
+.cl_bimg{
+  width:49%;
+height:100%;
+}
+.cl_bimg image{
+  width:100%;
+  height:100%;
+}
+.h100{
+  height:100%;
+}
+.hotType{
+  margin:30rpx;
+
+}
+.hTitle{
+  padding-left:20rpx;
+  border-left: solid 10rpx #cd0e28; 
+  height:50rpx;
+  line-height:50rpx;
+}
+.Timg{
+  margin-top:40rpx; 
+  height:600rpx;
+}
+.swiper{
+  height:100%;
+  width:100%;
+}
+.hotTop{
+  width:50%;
+  height:50%;
+}
+.hotTop image{
+  width:100%;
+  height:100%;
+}
+.hotBto{
+  width:25%;
+  height:50%;
+}
+image{
+  width:100%;
+  height:100%;
+}
+.hotToday{
+  margin: 30rpx;
+}
+.showList{
+  margin-top: 30rpx;
+  height:200rpx;
+  width:100%;
+  border-top:solid 1px #c7c7c7; 
+  padding-top:30rpx;
+}
+.img{
+  width:30%;
+  height:100%
+}
+.img image{
+  height: 100%;
+  width:100%;
+}
+.left{
+  float: left;
+}
+.content{
+  widtH:65%;
+  margin-left: 10rpx;
+}
+.title{
+  widtH:100%;
+  font-size: 30rpx;
+}
+.pro{
+  width:95%;
+  margin-top: 10rpx;
+}
+.right{
+  float:right;
+}
+.mb{
+  margin-top: 5rpx;
+  padding-right: 10rpx;
+  font-size: 30rpx;
+  color:#7a7a7a;
+}
+.money{
+  color:#cd0e28;
+}
+.gobuy{
+  position: relative;
+  clear: both;
+  padding-top: 18rpx;
+  padding-right: 20rpx;
+}
+.buyBtn{
+    background: #cd0e28;
+    position: absolute;
+    right:10rpx;
+    top:10rpx;
+    color:#fff;
+    height:60rpx;
+    width:200rpx;
+    line-height: 60rpx;
+    border-radius: 30px;
+    font-size: 30rpx;
+}
+.btoImg{
+  width: 100%;
+  height:300rpx;
+}
+
+
+/**邀请码**/
+.inputInvite{
+  border: solid 1px #c7c7c7;
+  height:80rpx;
+  text-align: center;
+}
+.Timg_l{
+  width:50%;
+  height:300rpx;
+  
+}
+.Timg_title{
+  text-align: center;
+
+}
+.Timg_title_b{
+color:rgb(205,21,49);
+  font-size: 30rpx;
+  margin-top: 10rpx;
+}
+.t_img{
+  width: 100%;
+  height:200rpx;
+}
+.Timg_b{
+  width:25%;
+  height:150rpx;
+}
+.Timg_b_title{
+  text-align: center;
+  font-size: 35rpx;
+}
+.Timg_b_title_b{
+  color:rgb(205,21,49);
+  font-size: 30rpx;
+  margin-top: 10rpx;
+}
+.t_b_img{
+  width:100%;
+  height:180rpx;
+}

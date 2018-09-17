@@ -1,0 +1,53 @@
+<view class="box">
+  <view class="rule">
+    <view class="title">
+      一：下单流程
+    </view>
+    <view class="content">
+      <view> 1：加入一起批订单一起享受工厂出厂价。</view>
+      <view>2：邀请友商加入增加达成率。</view>
+      <view>3：3天内订单数量满最小生产目标数量工厂发货，未满最小生产目标数量自动退款。</view>
+    </view>
+ 
+  <view class="title">
+     二：目标达成率
+    </view>
+    <view class="content">
+   一起批现在目前目标达成率在80%以上，平均目标达成时间不到1天，最快在一小时内目标达成
+    </view>
+     <view class="title">
+     三：发货问题
+    </view>
+    <view class="content">
+   <view>
+    A:一起批2018年整年全场包邮，用户不用承担任何运费。
+   </view>
+   <view>B：小于5双订单采用与一起批合作快递公司，大于5双订单采用物流发送，都在3天内可以送货到店。</view>
+
+    </view>
+     <view class="title">
+     四：退换问题
+    </view>
+    <view class="content">
+   30天内不影响2次销售都可申请退换
+    </view>
+     <view class="title">
+     五：定制生产
+    </view>
+    <view class="content">
+   目前定制生产还在测试阶段，采用内邀用户进行内测，后期会逐步开放
+    </view>
+     <view class="title">
+     六：付款方式
+    </view>
+    <view class="content">
+   一起批小程序现在只有付款支付一种支付方式
+    </view>
+     <view class="title">
+     七：品质保障
+    </view>
+    <view class="content">
+   入驻一起批的生产工厂，都需要进行工厂认证，保障所入驻工厂是真实的生产工厂而不是批发商，同时要通过多项产品质检合格，所用原材料都需要采用一起批平台指定原材料工厂保障原材料的品质，从产品源头开始控制产品品质，才能真正的做到品质保障
+    </view>
+  </view>
+</view>

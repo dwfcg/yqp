@@ -1,0 +1,208 @@
+.tag_title{
+  margin-left:20rpx;
+}
+.tag_title text{
+  color:rgb(205,21,49);
+}
+.tags{
+  background:rgb(254,138,111);
+  padding: 10rpx;
+  font-size: 30rpx;
+  color:#fff;
+  margin-top:15rpx;
+  margin-left:20rpx;
+  border-radius: 20rpx;
+}
+.tag{
+  width:100%;
+  height:150rpx;
+  clear: both;
+  border-bottom: solid 10rpx rgb(237,239,243);
+}
+.tishi{
+  color:rgb(194,194,194);
+  font-size: 35rpx;
+  position:absolute;
+  top:10rpx;
+  left:20rpx;
+}
+.area{
+  position: relative;
+  padding:10rpx;
+}
+.text{
+  height:400rpx;
+  width:99%;
+  border: solid 1px #c7c7c7;
+  border-radius: 20rpx;
+}
+.xianzhi{
+  font-size:30rpx;
+  margin-right:20rpx;
+}
+.xuxian{
+  clear: both;
+  width:100%;
+  height:20rpx;
+  border-bottom: dashed 1px rgb(237,239,243);
+}
+.updateImg{
+  width:100%;
+  height:270rpx;
+  border-bottom: solid 10rpx rgb(237,239,243);
+ 
+}
+.showImg{
+   padding-top:20rpx;
+    width: 100%;
+    height:100%;
+
+}
+.isUpdate{
+  width:200rpx;
+  height:200rpx;
+  margin-left:20rpx;
+}
+image{
+  width:100%;
+  height:100%;
+}
+.imgs{
+  width:200rpx;
+  height:200rpx;
+  display: inline-block;
+  border: solid 1px #c7c7c7;
+  position: relative;
+}
+._imgs{
+  height:200rpx;
+  width:65%;
+  margin-left:30rpx;
+}
+.sure{
+  position: absolute;
+  top:0;
+  right:0;
+}
+.imgright{
+  margin-right:30rpx;
+  font-size: 28rpx;
+}
+.btn{
+  width:150rpx;
+  height:80rpx;
+  margin-top:30rpx;
+  margin-right:20rpx;
+ /* box-shadow:1px 1px 5px #e12124;*/
+}
+
+/*商品类表*/
+.goodsTitle{
+  color:rgb(205,21,49);
+  padding-left:20rpx;
+  float: left;
+
+}
+.listShow{
+  height:200rpx;
+  width: 100%;
+}
+.list{
+  font-size: 35rpx;
+}
+image{
+  width: 100%;
+  height:100%;
+}
+.goodsImg{
+  height:200rpx;
+  widtH:200rpx;
+}
+.content{
+  width: 500rpx;
+  heigth:100%;
+}
+.details {
+  width: 100%;
+  height: 170rpx;
+  margin-top:15rpx;
+  border-bottom: 1rpx solid #ddd;
+}
+
+.pics {
+  width: 152rpx;
+  height: 155rpx;
+  float: left;
+  
+}
+
+.titles {
+  font-family: PingFang SC Regular;
+  font-size: 30rpx;
+  color: #000;
+  margin-left: 20rpx;
+  line-height: 20rpx;
+}
+
+.information {
+  font-family: PingFang SC Regular;
+  font-size: 24rpx;
+  color: #666;
+  margin-left: 20rpx;
+}
+
+.price {
+  font-family: PingFang SC Regular;
+  font-size: 36rpx;
+  color: #000;
+  margin-left: 20rpx;
+  line-height: 20rpx;
+  float: left;
+}
+
+.num {
+  font-family: PingFang SC Regular;
+  font-size: 36rpx;
+  color: #000;
+  margin-left: 20rpx;
+  line-height: 35rpx;
+  float: right;
+}
+
+.total {
+  width: 100%;
+  height: 88rpx;
+  font-family: PingFang SC Regular;
+  font-size: 26rpx;
+  color: #000;
+  line-height: 88rpx;
+  text-align: right;
+  border-bottom: 1rpx solid #ddd;
+}
+
+.status {
+  width: 100%;
+  height: 100rpx;
+  margin-top: 22rpx;
+  border-bottom: 1rpx solid #ddd;
+}
+
+._text {
+  width: 297rpx;
+  height: 60rpx;
+  float: left;
+  font-family: PingFang SC Regular;
+  font-size: 26rpx;
+  color: #cd0e28;
+  line-height: 60rpx;
+}
+
+.Goods{
+  width:100%;
+}
+.list{
+  width: 100%;
+}
+.red{
+  background: #ff0000 !important;
+}

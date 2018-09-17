@@ -1,0 +1,71 @@
+<view class="comment">
+<!-- 商品展示 -->
+<view class="Goods">
+  
+  <view class="list left">
+  <picker bindchange="bindPickerChange" range-key="goodsName" value="{{goodsIndex}}" range="{{goods}}">  
+    <view class='details'>
+          <view class='pics'>
+            <image style='width:100%;height:100%' src='https://www.jz2025.com{{goods[goodsIndex].goodsImg}}'></image>
+          </view>
+          <view class="goodsName" style="height:40rpx;overflow:hidden;">
+            <text class='titles'>{{goods[goodsIndex].goodsName}}</text>
+          </view>
+          <view style='height:75rpx;'>
+            <text class='information'>{{goods[goodsIndex].color}}  {{goods[goodsIndex].size}}码</text>
+          </view>
+          <view>
+            <text class='price'>￥{{goods[goodsIndex].goodsPrice}}</text>
+            <text class='num'>x{{goods[goodsIndex].goodsNum}}</text>
+          </view>
+        </view>
+
+    
+  </picker>
+    </view>
+
+</view>
+<!--  头部标签  -->
+  <view class="tag">
+    <view class="tag_title">
+      <text>选择标签：</text>
+    </view>
+    <view class="tag_tag">
+      <view class="tags left {{item.num==1?'red':''}}" data-index="{{index}}" bindtap='setTag' wx:for="{{tag}}">{{item.title}}({{item.num}})</view>
+    </view>
+  </view>
+  <!-- 输入框区域 -->
+  <view class="area">
+    <textarea class="text" maxlength="300" bindfocus="bindTextAreaFocus" bindblur="bindTextAreaBlur" bindinput="comment"  placeholder="" />
+    <view class="tishi" hidden="{{isShow}}" bindtap='isShow'>
+      <view>质量如何，价格如何，物流如何，服务如何？</view>
+      <view>(学会分享，才会财源滚滚)</view>
+    </view>
+    <view class="right xianzhi">限制300字内，最少{{num}}个字！</view>
+    <view class="xuxian"></view>
+  </view>
+  <!-- 图片上传区域最多6张 -->
+  <view class="updateImg">
+    <view class="showImg">
+      <view class="isUpdate left" bindtap='updateImg'>
+        <image src='../../images/pic_tupian@2x.png'></image>
+      </view>
+      <!-- 展示图片 -->
+      <scroll-view scroll-x="true" class="left _imgs"  style=" white-space: nowrap; display: flex">
+        <view class=" imgs" data-index="{{index}}" bindtap='delImg'  wx:for="{{imgs}}">
+          <image src='https://www.jz2025.com/{{item}}'></image>
+          <image class="sure" src="../../images/sure.png" style="width:40rpx;height:40rpx;"></image>
+        </view>
+      </scroll-view>
+      <view class="right imgright">
+        <text>传图≥2有机会获得优惠券哦</text>
+      </view>
+
+    </view>
+  </view>
+
+  <!-- 按钮区域 -->
+  <view class="btn right" bindtap='goComment'>
+      <image src="../../images/icon_fabu@2x.png"></image>
+  </view>
+</view>

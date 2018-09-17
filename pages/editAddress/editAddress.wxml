@@ -1,0 +1,19 @@
+<view class="show">
+  <view class="list">
+    <text class="left" decode="{{true}}">联&nbsp;&nbsp;系&nbsp;&nbsp;人：</text>
+    <input class="left list_input" bindinput="userName" value='{{address.userName}}' type="text" placeholder='请输入联系人姓名'></input>
+  </view>
+  <view class="list">
+    <text class="left" decode="{{true}}">联系方式：</text>
+    <input class="left  list_input" bindinput='userPhone' value='{{address.userPhone}}' type="text" placeholder='请输入联系电话'></input>
+  </view>
+  <view class="list">
+    <text class="left" decode="{{true}}">详细地址：</text>
+    <input class="left list_input" type="text" value="{{address.userAddress}}" bindinput='userAddress' placeholder='请输入详细地址'></input>
+  </view>
+</view>
+
+<!-- 底部 -->
+<view class="bottom" bindtap='add'>
+  <image src='../../images/icon_baocun@2x.png'></image>
+</view>

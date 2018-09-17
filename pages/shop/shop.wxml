@@ -1,0 +1,65 @@
+<view class='show'>
+  
+    <view class='showList' wx:for="{{carts}}">
+    <checkbox-group bindchange="checkboxChange" data-id="{{item.cartId}}" data-index="{{index}}">
+      <view  class="check left">
+        <checkbox checked="{{item.isCheck==1?true:false}}"></checkbox>
+      </view>
+      <view class="left">
+        <image class="imgShow" src="{{item.img}}"></image>
+      </view>
+      <view class="left l_ti">
+        <view class="title">
+          <text>{{item.goods.goodsName}}</text>
+        </view>
+        <view class="l_bm">
+          <view class="left">
+            <view class="l_bm_size">
+              <text>{{item.goodsspecs.color.colName}}  {{item.goodsspecs.size}}码</text>
+            </view>
+            <view class="red">
+              <text>¥{{item.goods.goodsPriceone}}</text>
+            </view>
+          </view>
+          <view class="right">
+            <view class="stepper">  
+              <!-- 减号 -->  
+              <text class="{{item.cartNum>1?'normal':'disabled'}}" data-id="{{item.cartId}}" data-index="{{index}}" bindtap="bindMinus">-</text>  
+              <!-- 数值 -->  
+              <input type="number" data-id="{{item.cartId}}" data-index="{{index}}" bindchange="bindManual" value="{{item.cartNum}}" />  
+              <!-- 加号 -->  
+              <text class="normal"data-id="{{item.cartId}}" data-index="{{index}}" bindtap="bindPlus">+</text>  
+            </view> 
+          </view>
+        </view>
+      </view>
+      </checkbox-group>
+    </view>
+
+    
+  
+</view>
+
+<view style="height:110rpx;"></view>
+<view class='bottom'>
+  <view class="bTop">
+    <view class="bLeft left">
+    <checkbox-group bindchange="select_all">
+      <checkbox ></checkbox> <text>全选({{checkAll}})</text>
+    </checkbox-group>
+    </view>
+   <view class="bCon left">
+      <view class="">总计：<text class="count">¥{{count}}</text></view>
+      <view class="bcL">总额：<text class="red">¥{{count}}</text>  <text class="ml">折扣：<text class="red">¥{{rebate}}   </text></text></view>
+   </view>
+   <view class="bRight right">
+      <view bindtap='goBuy'>去支付</view>
+   </view>
+  </view>
+ 
+</view>
+<modal hidden="{{address}}" title="添加收货地址" confirm-text="确认" cancel-text="取消" bindcancel="cancel" bindconfirm="confirm">
+  <input type='text' bindinput="name" placeholder="请输入收货人" />  
+   <input type='text' bindinput='phone' placeholder="请输入手机号码" />  
+    <input type='text' bindinput="addr" placeholder="请输入收货地址" />  
+</modal>

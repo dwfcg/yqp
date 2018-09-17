@@ -1,0 +1,212 @@
+.top{
+  height: 170rpx;
+  
+  margin-top: 20rpx;
+  padding: 20rpx;
+}
+#phone{
+  margin-left: 50rpx;
+}
+#address{
+  margin-top: 20rpx;
+  font-size: 35rpx;
+}
+.showList{
+  height:120px;
+}
+.check{
+  padding-left: 15rpx;
+  line-height: 120px;
+}
+checkbox .wx-checkbox-input{
+
+  border-radius: 50%;
+
+  height: 30rpx;
+
+  width: 30rpx;
+
+  margin-top: -4rpx;
+
+ /* 自定义样式.... */
+
+}
+
+checkbox .wx-checkbox-input.wx-checkbox-input-checked{
+   
+   background: #cd1531;
+}
+checkbox .wx-checkbox-input.wx-checkbox-input-checked::before{
+   border-radius: 50%;
+   width: 30rpx;
+   height: 30rpx;
+   line-height: 30rpx;
+   text-align: center;
+   font-size:30rpx;
+   color:#fff;
+   background: transparent;
+   transform:translate(-50%, -50%) scale(1);
+   -webkit-transform:translate(-50%, -50%) scale(1);
+}
+
+.imgShow{
+  height:80px;
+  width: 80px;
+  margin-top: 20px;
+  margin-left: 6px;
+}
+.title{
+  widtH:100%;
+  font-size: 30rpx;
+}
+.l_ti{
+  width:60%;
+  margin-left: 10px;
+  margin-top: 15px;
+}
+
+
+/*主容器*/  
+.stepper {  
+    width: 80px;  
+    height: 26px;  
+    /*给主容器设一个边框*/  
+    border: 1px solid #ccc;  
+    border-radius: 3px;  
+    margin-top: 10px;
+}  
+  
+/*加号和减号*/  
+.stepper text {  
+    width: 19px;  
+    line-height: 26px;  
+    text-align: center;  
+    float: left;  
+}  
+  
+/*数值*/  
+.stepper input {  
+    width: 40px;  
+    height: 26px;  
+    float: left;  
+    margin: 0 auto;  
+    text-align: center;  
+    font-size: 12px;  
+    /*给中间的input设置左右边框即可*/  
+    border-left: 1px solid #ccc;  
+    border-right: 1px solid #ccc;  
+}  
+.bottom{
+  position: fixed;
+  bottom: 0;
+  left:0;
+  width:100%;
+  
+  background: #fff;
+  height:480rpx;
+}
+.bTop{
+  border-top:solid 1px #dddddd;
+  height:110rpx;
+  font-size: 30rpx;
+}
+.bLeft{
+  height:100%;
+  line-height: 110rpx;
+  padding-left: 15rpx;
+  
+}
+.bCon{
+
+  width:400rpx;
+  text-align: right;
+}
+.bRight{
+  color:#fff;
+  width:180rpx;
+  height:110rpx;
+  text-align: center;
+  line-height: 110rpx;
+  background: #cd0e28;
+}
+.count{
+  color:#cd0e28;
+  font-size:50rpx;
+}
+.ml{
+  margin-left:5px;
+}
+.bcL{
+  font-size: 25rpx;
+}
+.red{
+  color:#cd0e28 !important;
+}
+.bBottom{
+  border-top:solid 1px #dddddd;
+  height:110rpx;
+  font-size: 30rpx;
+}
+.bBtn{
+  height: 100%;
+  width:33%;
+  color:#aeaeae;
+  padding-top: 10rpx;
+  text-align: center;
+  
+}
+.w{
+  width:15px;
+}
+
+.wIco{
+  font-size: 45rpx !important;
+}
+.bFont{
+  font-size:20rpx;
+}
+.l_bm_size{
+  color:#aeaeae;
+  font-size: 28rpx;
+}
+
+/*普通样式*/  
+.stepper .normal{  
+    color: black;  
+}  
+  
+/*禁用样式*/  
+.stepper .disabled{  
+    color: #ccc;  
+}
+.list{
+  height:84rpx;
+  line-height: 84rpx;
+  border-bottom: solid 1px #dddddd;
+  color:#989898;
+  font-size: 30rpx;
+  
+}
+.list .left{
+  margin-left: 20rpx;
+  text-align: right;
+  width:138rpx;
+} 
+.list .right{
+  text-align: right;
+  width:138rpx;
+  margin-right:20rpx;
+  color:#000;
+} 
+.list .red{
+  font-size: 37rpx;
+}
+
+.Blist{
+  position: absolute;
+  bottom: 0px;
+  left:0px;
+  width:100%;
+  line-height:110rpx;
+  height:110rpx;
+}

@@ -1,0 +1,77 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/problems/problems",
+    "pages/my/my",
+    "pages/home/home",
+    "pages/details1/details",
+    "pages/share/share",
+    "pages/rule/rule",
+    "pages/user/user", 
+    "pages/refund/refund",
+    "pages/shopcertification/shopcertification",
+    "pages/certification/certification",
+    "pages/review/review",
+    "pages/address/address",
+    "pages/editAddress/editAddress",
+    "pages/comment/comment",
+    "pages/collect/collect",
+    "pages/gobuy/gobuy",
+    "pages/details/details",
+    "pages/shop/shop",
+    "pages/orders/orders",
+    "pages/shop-details/shop-details",
+    "pages/filter/filter",
+    "pages/new/new",
+    "pages/hot/hot",
+    "pages/show/show",
+    "pages/addGoods/addGoods",
+    "pages/search/search",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "首页",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "images/index.png",
+        "selectedIconPath": "images/index@selected.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/show/show",
+        "iconPath": "images/fenlei.png",
+        "selectedIconPath": "images/fenlei@selected.png",
+        "text": "分类"
+      },
+      {
+        "pagePath": "pages/new/new",
+        "iconPath": "images/new.png",
+        "selectedIconPath": "images/new@selected.png",
+        "text": "新品"
+      },
+      {
+        "pagePath": "pages/home/home",
+        "iconPath": "images/hot.png",
+        "selectedIconPath": "images/hot@selected.png",
+        "text": "热门"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "iconPath": "images/my.png",
+        "selectedIconPath": "images/my@selected.png",
+        "text": "我的"
+      }
+    ],
+    "backgroundColor": "#F5F5F5",
+    "selectedColor": "#AB956D",
+    "color": "#989898",
+    "borderStyle": "white",
+    "position": "bottom"
+  }
+}

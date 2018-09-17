@@ -1,0 +1,159 @@
+.top{
+  position: fixed;
+  top:0px;
+  left:0px;
+  width: 100%;
+  height:30px;
+  border-bottom: solid 1px #dddddd;
+  z-index: 99999999999;
+}
+
+
+.top_menu{
+  float: left;
+  font-size: 16px;
+ 
+  width: 25%;
+  height: 100%;
+  text-align: center;
+}
+.active{
+  color:#cd1531;
+}
+.line{
+  height: 5px;
+  background: #cd1531;
+  margin:10rpx 20rpx;
+}
+.show{
+ 
+  
+  width: 100%;
+}
+.showList{
+  margin-top: 30rpx;
+  height:300rpx;
+  width:100%;
+  border-top:solid 1px #c7c7c7; 
+  padding-top:30rpx;
+  margin-left:20rpx;
+}
+.img{
+  width:40%;
+  height:100%
+}
+.img image{
+  height: 100%;
+  width:100%;
+}
+.left{
+  float: left;
+}
+.content{
+  widtH:56%;
+  margin-left: 10rpx;
+  height:100%;
+position:relative;
+
+}
+.title{
+  widtH:100%;
+  font-size: 30rpx;
+}
+.pro{
+  width:95%;
+  margin-top: 40rpx;
+}
+.right{
+  float:right;
+}
+.mb{
+  margin-top: 18rpx;
+  padding-right: 10rpx;
+  font-size: 30rpx;
+  color:#7a7a7a;
+}
+.money{
+  color:#cd0e28;
+}
+.gobuy{
+  clear:both;
+padding-top:40rpx;
+padding-right:20rpx;
+width:100%;
+
+}
+.buyBtn{
+    background: #cd0e28;
+   
+    color:#fff;
+    height:60rpx;
+    width:200rpx;
+    line-height: 60rpx;
+    border-radius: 30px;
+    font-size: 30rpx;
+}
+.btoImg{
+  width: 100%;
+  height:300rpx;
+}
+.search{
+  width:100%;
+  height:80rpx;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+.search_input{
+  width: 90%;
+  text-align: center;
+  border: solid 1px #ddd;
+  height:60rpx;
+  border-radius: 40rpx;
+  font-size: 25rpx;
+}
+
+.goodsCategory{
+  background: #fff;
+  color:#000;
+  
+}
+.goodsCategory view{
+  border-bottom: solid 1px #dddddd;
+}
+.bottom{
+  width: 100%;
+  height:50rpx;
+  position:fixed;
+  bottom: 0;
+  left:0;
+  color:#c7c7c7;
+  background-color: #fff;
+  padding-top: 20rpx;
+}
+.icon{
+  text-align: center;
+  height:120rpx;
+ 
+  width:20%;
+}
+.icon_img text{
+  font-size: 50rpx;
+}
+.icon_title{
+  font-size: 30rpx;
+}
+.red{
+  color:#cd0e28;
+}
+.imgShow{
+  width: 100%;
+  height:400rpx;
+}
+
+scroll-view{  
+  position: absolute;  
+  bottom: 0;  
+  left: 0;  
+  right: 0;  
+  top: 0;  
+}  

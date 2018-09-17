@@ -1,0 +1,81 @@
+<view class="top">
+  <view class="status">
+    <view class="left">
+      等待买家付款
+    </view>
+    <view class="right" style="height:50rpx;">
+      <image src='../images/未开始.png'></image>
+    </view>
+  </view>
+  <view>
+    <view class="left">
+      <view class="">
+        <text id="name">李星</text><text id="phone">15474553016</text>
+      </view>
+      <view id="address">
+        <text>成都市锦江区航天科技大厦38楼成都市锦江区 航天科技大厦38楼</text>
+      </view>
+    </view>
+    <view class="right">
+    </view>
+  </view>
+</view>
+
+<view class='show' style="height:440rpx;">
+    <view class='showList'>
+     <view style="height:220rpx;">
+      <view class="left">
+        <image class="imgShow" src="../images/1.jpg"></image>
+      </view>
+      <view class="left l_ti">
+        <view class="title">
+          <text>2018年春新款欧美真皮平鞋女鞋平底单鞋</text>
+        </view>
+        <view class="l_bm">
+          <view class="left">
+            <view class="l_bm_size">
+              <text>黑色  36码</text>
+            </view>
+            <view class="red">
+              <text>¥16</text>
+            </view>
+          </view>
+         
+        </view>
+      </view>
+      </view>
+      <view style="clear:both;" class="t-right">
+        <view>
+        共1件商品  需付款：  <text class="red">¥16</text>
+        </view>
+      </view>
+      <view class="t-right">
+        <view class="left">
+          支付方式： 微信支付
+        </view>
+        <view class="right">
+          <button class="lx">联系客服</button>
+        </view>
+      </view>
+    </view>
+</view>
+
+<view class="bottom">
+  <view class="Blist">
+    订单编号
+  </view>
+  <view class="Blist">
+    支付方式
+  </view>
+  <view class="Blist">
+  下单时间
+  </view>
+</view>
+<view class="button">
+  <view class="right gobuy">
+    确认支付
+  </view>
+  <view class="right esc">
+    取消订单
+  </view>
+</view>

@@ -1,0 +1,39 @@
+.top_title{
+  font-size: 25rpx;
+  width:100%;
+}
+.content{
+  width: 90%;
+  margin-left: 5%;
+  font-size: 30rpx;
+}
+.ts{
+  margin-top: 30rpx;
+}
+._text{
+  height:200rpx;
+  width:99%;
+  border: solid 1px #c7c7c7;
+  border-radius: 20rpx;
+}
+.ts_title{
+  font-size: 30rpx;
+  text-align: center;
+  margin-top:30rpx;
+  height:100rpx;
+  color:rgb(205,21,49);
+}
+.btn{
+  width: 100%;
+  height:100rpx;
+}
+.btn button{
+  background: rgb(205,21,49);
+  color: #fff;
+ 
+  width:90%;
+  line-height: 80rpx;
+  margin-left:5%; 
+  height:80rpx;
+  margin-top: 40rpx;
+}

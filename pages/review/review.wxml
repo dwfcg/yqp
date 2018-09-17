@@ -1,0 +1,34 @@
+<view class="content">
+  <view class="top_title" style="{{isApply !=0?'display:none':''}}">
+    您已提交实名认证资料，我们会在3-5个工作日经行审核，审核中工作人员会来电核实资料，请保持电话畅通。
+  </view>
+  <view class="ts_title">
+    <view>
+      {{view_title[isApply][0]}}
+    </view>
+    <view style="{{isApply !=0?'margin-top:30rpx;':''}}{{isApply ==2 ?'color:#000':''}}">
+    {{view_title[isApply][1]}}
+    </view>
+    
+  </view>
+
+  <view class="ts" style="{{isApply !=2?'display:none':''}}">
+    <view>
+      认证未通过原因：
+    </view>
+    <view style="margin-top:30rpx;">
+      <view class="area">
+    <textarea class="_text" maxlength="100" bindblur='getInput' data-name="scope"  placeholder="{{isApplyMsg}}" />
+    </view>
+    </view>
+  </view>
+
+  <view class="btn">
+  <button style="{{isApply !=0?'display:none':''}}" bindtap='goIndex'>去首页进货</button>
+  </view>
+  <view class="btn">
+  <button style="{{isApply !=0?'display:none':''}}" open-type="share" >分享到微信群邀请好友</button>
+  <button style="{{isApply !=1?'display:none':''}}" bindtap='goUser'>返回用户中心</button>
+   <button style="{{isApply !=2?'display:none':''}}" bindtap='goApply'>修改质料重新提交</button>
+  </view>
+</view>

@@ -1,0 +1,244 @@
+<!--index.wxml-->
+<!-- 轮播 -->
+<view class='top_img'>
+  <image src='../img/banner.png'></image>
+</view>
+<view class='conten'>
+  <view id='box'>
+    <view class='top'>
+      <view wx:for="{{text}}" data-index="{{index}}" bindtap='meunActive' class="{{currentTab==item.num?'active':''}}" data-current="{{item.num}}" bindtap="clickTab">{{item.text}}</view>
+    </view>
+    <navigator url='' class='bottom'>全部分类></navigator>
+  </view>
+
+
+  <view class='top_text'  class="{{currentTab==0?'top_text':'active2'}}">
+    <view class='heng'></view>
+    <view>定制</view>
+    <view class='heng'></view>
+  </view>
+  <view class='top_text' class="{{currentTab==1?'top_text':'active2'}}">
+    <view class='heng'></view>
+    <view>现货</view>
+    <view class='heng'></view>
+  </view>
+  <view class='top_text' class="{{currentTab==2?'top_text':'active2'}}">
+    <view class='heng'></view>
+    <view>热门</view>
+    <view class='heng'></view>
+  </view>
+  <view class='top_text' class="{{currentTab==3?'top_text':'active2'}}">
+    <view class='heng'></view>
+    <view>新品</view>
+    <view class='heng'></view>
+  </view>
+
+
+  <view class="{{currentTab==0?'bottom':'active2'}}">
+
+    <view class='details'>
+
+      <view class='tu'>
+        <image src=''></image>
+      </view>
+      <view class='money'>￥199</view>
+      <view class='text'>
+        <view>2018秋冬新款磨砂皮过膝靴</view>
+        <view>...</view>
+      </view>
+
+    </view>
+    <view class='details'>
+
+      <view class='tu'>
+        <image src=''></image>
+      </view>
+      <view class='money'>￥199</view>
+      <view class='text'>
+        <view>2018秋冬新款磨砂皮过膝靴</view>
+        <view>...</view>
+      </view>
+
+    </view>
+    <view class='details'>
+
+      <view class='tu'>
+        <image src=''></image>
+      </view>
+      <view class='money'>￥199</view>
+      <view class='text'>
+        <view>2018秋冬新款磨砂皮过膝靴</view>
+        <view>...</view>
+      </view>
+
+    </view>
+    <view class='details'>
+
+      <view class='tu'>
+        <image src=''></image>
+      </view>
+      <view class='money'>￥199</view>
+      <view class='text'>
+        <view>2018秋冬新款磨砂皮过膝靴</view>
+        <view>...</view>
+      </view>
+
+    </view>
+  </view>
+
+  <view class="{{currentTab==1?'bottom':'active2'}}">
+
+    <view class='details'>
+
+      <view class='tu'>
+        <image src=''></image>
+      </view>
+      <view class='money'>￥199</view>
+      <view class='text'>
+        <view>2018秋冬新款磨砂皮过膝靴</view>
+        <view>...</view>
+      </view>
+
+    </view>
+    <view class='details'>
+
+      <view class='tu'>
+        <image src=''></image>
+      </view>
+      <view class='money'>￥199</view>
+      <view class='text'>
+        <view>2018秋冬新款磨砂皮过膝靴</view>
+        <view>...</view>
+      </view>
+
+    </view>
+    <view class='details'>
+
+      <view class='tu'>
+        <image src=''></image>
+      </view>
+      <view class='money'>￥199</view>
+      <view class='text'>
+        <view>2018秋冬新款磨砂皮过膝靴</view>
+        <view>...</view>
+      </view>
+
+    </view>
+    <view class='details'>
+
+      <view class='tu'>
+        <image src=''></image>
+      </view>
+      <view class='money'>￥199</view>
+      <view class='text'>
+        <view>2018秋冬新款磨砂皮过膝靴</view>
+        <view>...</view>
+      </view>
+
+    </view>
+  </view>
+
+  <view class="{{currentTab==2?'bottom':'active2'}}">
+
+    <view class='details'>
+
+      <view class='tu'>
+        <image src=''></image>
+      </view>
+      <view class='money'>￥199</view>
+      <view class='text'>
+        <view>2018秋冬新款磨砂皮过膝靴</view>
+        <view>...</view>
+      </view>
+
+    </view>
+    <view class='details'>
+
+      <view class='tu'>
+        <image src=''></image>
+      </view>
+      <view class='money'>￥199</view>
+      <view class='text'>
+        <view>2018秋冬新款磨砂皮过膝靴</view>
+        <view>...</view>
+      </view>
+
+    </view>
+    <view class='details'>
+
+      <view class='tu'>
+        <image src=''></image>
+      </view>
+      <view class='money'>￥199</view>
+      <view class='text'>
+        <view>2018秋冬新款磨砂皮过膝靴</view>
+        <view>...</view>
+      </view>
+
+    </view>
+    <view class='details'>
+
+      <view class='tu'>
+        <image src=''></image>
+      </view>
+      <view class='money'>￥199</view>
+      <view class='text'>
+        <view>2018秋冬新款磨砂皮过膝靴</view>
+        <view>...</view>
+      </view>
+
+    </view>
+  </view>
+
+  <view class="{{currentTab==3?'bottom':'active2'}}">
+
+    <view class='details'>
+
+      <view class='tu'>
+        <image src=''></image>
+      </view>
+      <view class='money'>￥199</view>
+      <view class='text'>
+        <view>2018秋冬新款磨砂皮过膝靴</view>
+        <view>...</view>
+      </view>
+
+    </view>
+    <view class='details'>
+
+      <view class='tu'>
+        <image src=''></image>
+      </view>
+      <view class='money'>￥199</view>
+      <view class='text'>
+        <view>2018秋冬新款磨砂皮过膝靴</view>
+        <view>...</view>
+      </view>
+
+    </view>
+    <view class='details'>
+
+      <view class='tu'>
+        <image src=''></image>
+      </view>
+      <view class='money'>￥199</view>
+      <view class='text'>
+        <view>2018秋冬新款磨砂皮过膝靴</view>
+        <view>...</view>
+      </view>
+
+    </view>
+    <view class='details'>
+
+      <view class='tu'>
+        <image src=''></image>
+      </view>
+      <view class='money'>￥199</view>
+      <view class='text'>
+        <view>2018秋冬新款磨砂皮过膝靴</view>
+        <view>...</view>
+      </view>
+
+    </view>
+  </view>
+</view>

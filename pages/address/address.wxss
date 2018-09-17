@@ -1,0 +1,98 @@
+.check{
+  padding-left: 15rpx;
+  
+}
+checkbox .wx-checkbox-input{
+
+  border-radius: 50%;
+
+  height: 30rpx;
+
+  width: 30rpx;
+
+  margin-top: -4rpx;
+
+ /* 自定义样式.... */
+
+}
+
+checkbox .wx-checkbox-input.wx-checkbox-input-checked{
+   
+   background: #cd1531;
+}
+checkbox .wx-checkbox-input.wx-checkbox-input-checked::before{
+   border-radius: 50%;
+   width: 30rpx;
+   height: 30rpx;
+   line-height: 30rpx;
+   text-align: center;
+   font-size:30rpx;
+   color:#fff;
+   background: transparent;
+   transform:translate(-50%, -50%) scale(1);
+   -webkit-transform:translate(-50%, -50%) scale(1);
+}
+.addr_list{
+  width:100%;
+  height:210rpx;
+ 
+  font-size: 30rpx;
+}
+.list_top{
+  height:60%;
+  border-bottom: solid 1px rgb(242, 242, 242);
+  padding-top: 30rpx;
+}
+.checkbox{
+  width:100%;
+  height:100%;
+}
+.list_bottom{
+  height:40%;
+}
+.userInfo{
+  margin-left:30rpx;
+  margin-top:30rpx;
+}
+.address{
+  height:20rpx;
+}
+.list_bottom{
+  line-height: 80rpx;
+  color:rgb(153,153,153);
+}
+page{
+  background: rgb(242.242.242);
+}
+.menu{
+  width: 40%;
+  height:100%;
+  
+}
+.menu_list{
+  height:100%;
+  width:40%;
+ 
+}
+.menu_list_image{
+  width:30rpx;
+  height: 30rpx;
+  margin-top: 25rpx;
+  margin-right: 10rpx;
+}
+.bottom{
+  width: 100%;
+  height:100rpx;
+  position: fixed;
+  bottom: 0;
+  left:0;
+}
+.bottom image{
+  height:90rpx;
+  width:94%;
+  margin-top: 5rpx;
+  margin-left:3%; 
+}
+.red{
+  color:rgb(205, 21, 49);
+}
