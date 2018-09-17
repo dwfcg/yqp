@@ -1,0 +1,233 @@
+/* pages/shop/shop.wxss */
+page{
+  background: #fff;
+}
+.heard {
+  background: #fff;
+  padding: 40rpx 76rpx;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20rpx;
+  border-bottom: 10rpx solid #eee;
+}
+
+.heard .box1 {
+  display: flex;
+  justify-content: start;
+  /* padding: 40rpx 0 30rpx; */
+  margin-bottom: 25rpx;
+  font-size: 28rpx;
+}
+
+.heard .box1 .name {
+  margin-right: 20rpx;
+}
+
+.heard .address {
+  width: 260rpx;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-size: 26rpx;
+  color: rgb(151, 151, 151);
+  /* padding-bottom:40rpx;  */
+}
+
+.heard .right {
+  font-size: 24rpx;
+  color: rgb(151, 151, 151);
+  text-decoration: underline;
+}
+
+.center {
+  background: #fff;
+  padding: 20rpx;
+  margin-bottom: 20rpx;
+}
+
+.center .top {
+  padding: 0 56rpx;
+}
+
+.center .cent {
+  padding: 30rpx 56rpx;
+  background: rgb(252, 252, 252);
+  display: flex;
+  justify-content: space-between;
+}
+
+.center .tu {
+  width: 160rpx;
+  height: 160rpx;
+  border: 1rpx solid #000;
+}
+
+.center .tu image {
+  width: 100%;
+  height: 100%;
+}
+
+.center .cent .conter {
+  padding: 10rpx 0;
+}
+
+.center .cent .name {
+  font-size: 28rpx;
+  margin-bottom: 20rpx;
+}
+
+.center .cent .conter .nav {
+  display: flex;
+  justify-content: start;
+  margin-bottom: 30rpx;
+}
+
+.center .cent .conter .nav view {
+  background: rgb(234, 234, 234);
+  font-size: 24rpx;
+  padding: 6rpx 15rpx;
+  border-radius: 5rpx;
+  margin-right: 15rpx;
+  box-sizing: border-box;
+}
+
+.center .cent .bottom {
+  /* color: red; */
+  font-size: 30rpx;
+  display: flex;
+  justify-content: space-between;
+  line-height: 30rpx;
+}
+.center .cent .bottom .money{
+color: red;
+}
+.center .cent .bottom .number{
+  font-size: 22rpx;
+  color: rgb(151, 151, 151);
+}
+.center .cent .money text {
+  font-size: 26rpx;
+}
+
+.center .bottom .cent1 {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2rpx solid #b5b5b5;
+  padding: 20rpx 56rpx;
+  font-size: 28rpx;
+}
+
+.center .bottom .cent1 .right .stepper {
+  display: flex;
+  justify-content: space-between;
+  width: 140rpx;
+  position: relative;
+}
+
+.center .bottom .cent1 .right input {
+  width: 80rpx;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.center .bottom .cent2 {
+  padding: 20rpx 56rpx;
+  font-size: 28rpx;
+  text-align: right;
+}
+
+.center .bottom .cent2 view {
+  margin-right: 25rpx;
+  display: flex;
+  justify-content: start;
+}
+
+.footer {
+  width: 100%;
+  height: 90rpx;
+  background: rgb(250, 250, 250);
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  box-sizing: border-box;
+  font-size: 28rpx;
+  line-height: 90rpx;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer .left {
+  padding-left: 180rpx;
+}
+
+.footer .button {
+  height: 100%;
+  background: rgb(244, 234, 42);
+  width: 240rpx;
+  line-height: 90rpx;
+  text-align: center;
+  font-size: 30rpx;
+}
+
+/*加号和减号*/
+
+.stepper text {
+  width: 24rpx;
+  height: 23rpx;
+  line-height: 23rpx;
+  text-align: center;
+  background: rgb(234, 234, 234);
+  float: left;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+.stepper .right{
+  right: 0;
+}
+/*数值*/
+
+.stepper input {
+  width: 40px;
+  height: 26px;
+  float: left;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 12px;
+}
+
+/*普通样式*/
+
+.stepper .normal {
+  color: black;
+}
+
+/*禁用样式*/
+
+.stepper .disabled {
+  color: #ccc;
+}
+
+checkbox .wx-checkbox-input {
+  border-radius: 50%;
+  width: 20rpx;
+  height: 20rpx;
+}
+
+checkbox .wx-checkbox-input.wx-checkbox-input-checked {
+  border: none;
+  background: red;
+}
+
+checkbox .wx-checkbox-input.wx-checkbox-input-checked::before {
+  border-radius: 50%;
+  width: 20rpx;
+  height: 20rpx;
+  line-height: 20rpx;
+  text-align: center;
+  font-size: 18rpx;
+  color: #fff;
+  background: transparent;
+}

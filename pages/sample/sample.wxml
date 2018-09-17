@@ -1,0 +1,63 @@
+<!--pages/sample/sample.wxml-->
+
+  <view style='{{ordersAll.length==0?"display:none;":""}}'>
+    <scroll-view scroll-y="true" style="height:{{winHeight - 41}}px">
+         
+      <view wx:for="{{ordersAll}}" wx:for-index="index">
+        <view class='share' >
+      <view class='details' wx:for="{{item.ordergoods}}" wx:for-item="goods">
+        <view class='pics'>
+          <image style='width:100%;height:100%' src='{{goods.goodsImg}}'></image>
+        </view>
+        <view class="goodsName">
+          <text class='titles'>{{goods.goodsName}}</text>
+        </view>
+        <view style='height:75rpx;'>
+          <text class='information'>{{goods.color}}  {{goods.size}}码</text>
+        </view>
+        <view>
+          <text class='price'>￥{{goods.goodsPrice}}</text>
+          <text class='num'>x{{goods.goodsNum}}</text>
+        </view>
+      </view>
+      <view class='total'>
+        <text>  样品押金:¥{{item.goodsMoney}}</text>
+      </view>
+      <view class='status'>
+        <!-- <block wx:if="{{item.orderStatus == -2}}"> -->
+         <!-- <view class='text'></view>
+          <view class='cancel' data-orderNo="{{item.orderNo}}" bindtap='delOrders'>取消订单</view>
+          <view class='invite' data-orderNo="{{item.orderNo}}" bindtap='pay'>去支付</view> -->
+        <!-- </block> -->
+        <!-- <block wx:elif="{{item.orderStatus == 0}}"> -->
+          <view class='text'>
+            <text></text>
+          </view>
+          <view class='cancel' bindtap="refund" data-no="{{item.orderNo}}">申请退样</view>
+          <view class='invite'  data-id="{{ item.ordergoods[0].goodsId}}" bindtap='tsfh' data-index='{{index}}'>去下单</view>
+        <!-- </block> -->
+        <!-- <block wx:elif="{{item.orderStatus == 1}}">
+          <view class='text'>
+            <text>已发货</text>
+          </view>
+          <view class='cancel' bindtap="refund" data-no="{{item.orderNo}}">申请退样</view>
+          <view class='invite' data-no="{{item.orderNo}}" bindtap='qrsh'>确认收货</view>
+        </block> -->
+        <!--
+        <view class='text'>
+          <text>进行中，还差20双</text>
+        </view>
+        <view class='cancel'>取消订单</view>
+        <view class='invite'>邀请友商一起批</view>-->
+      </view>
+    </view>
+      
+      </view>
+    
+    </scroll-view>
+   </view>
+    
+    <view class='none'>
+      
+    </view>
+

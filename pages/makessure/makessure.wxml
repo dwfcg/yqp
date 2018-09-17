@@ -1,0 +1,86 @@
+<!--pages/shop/shop.wxml-->
+<view class='heard'>
+  <view class='left'>
+    <view class='box1'>
+      <view class='name'>{{address.userName}}</view>
+      <view class='phone'>{{address.userPhone}}</view>
+    </view>
+    <view class='address'>
+      {{address.userAddress}}
+    </view>
+  </view>
+  <view class='right'>
+    <navigator bindtap='selectAddress'>选择地址</navigator>
+  </view>
+</view>
+<view style='padding-bottom:90rpx;'>
+  <view class='center' wx:for='{{cent}}' wx:for-item="item">
+    <view class='top'>
+      订单编号：{{item.ordergoods[0].orderNo}}
+    </view>
+    <view class='cent'>
+      <view class='tu'>
+        <image src='{{item.ordergoods[0].goodsImg}}'></image>
+      </view>
+      <view class='conter'>
+        <view class='name'>{{item.ordergoods[0].goodsName}}</view>
+        <view class='nav'>
+          <view>{{item.ordergoods[0].size}}</view>
+          <view>{{item.ordergoods[0].color}}</view>
+          <view>定制款</view>
+        </view>
+        <view class='bottom'>
+          <view class='money'>
+            <text>￥</text>
+            <text>{{item.ordergoods[0].goodsPrice}}</text>
+          </view>
+          <text class='number'>x{{item.ordergoods[0].goodsNum}}</text>
+        </view>
+      </view>
+    </view>
+    <view class='bottom'>
+      <view class='cent1'>
+        <view>购买数量</view>
+        <view class="right">
+          <view class="stepper">
+            <!-- 减号 -->
+            <text class="{{minusStatus}}" data-id=' ' bindtap="bindMinus">-</text>
+            <!-- 数值 -->
+            <input type="number" bindchange="bindManual" value="{{num}}" />
+            <!-- 加号 -->
+            <text class="normal right" bindtap="bindPlus">+</text>
+          </view>
+        </view>
+
+
+      </view>
+      <view class='cent1'>
+        <view>款式类型</view>
+        <view class='right'>定制型</view>
+      </view>
+      <view class='cent1'>
+        <view>生产周期</view>
+        <view class='right'>{{item.ordergoods[0].goods.make_time}}</view>
+      </view>
+      <view class='cent1'>
+        <view>快递方式</view>
+        <view class='right'>简制包邮</view>
+      </view>
+      <view class='cent2'>
+        <text style='margin-right:25rpx;'>共一件商品</text>
+        <text>小计： <text style='color:red;'><text style='font-size:26rpx;'>￥</text>{{money}}</text>
+        </text>
+      </view>
+    </view>
+  </view>
+</view>
+
+<view class='footer'>
+  <view class='left'>
+    合计金额：
+    <text style='color:red;'><text style='font-size: 26rpx;'>￥</text>{{money}}</text>
+  </view>
+  <view class='button' bindtap='button'>
+    提交订单
+  </view>
+</view>

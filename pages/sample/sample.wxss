@@ -1,0 +1,276 @@
+/* pages/sample/sample.wxss */
+/* pages/orders/orders.wxss */
+page{
+  background: #fff;
+}
+.page_row {
+  width: 100%;
+  height: 90rpx;
+  background: red;
+}
+
+.phcolor {
+  font-size: 24rpx;
+}
+
+.search {
+  width: 90%;
+  height: 70rpx;
+  margin: 0 auto;
+  margin-top: 15rpx;
+}
+
+.search_arr {
+  border: 1px solid #d0d0d0;
+  border-radius: 25rpx;
+  margin-left: 20rpx;
+  background: #fff;
+}
+
+.search_arr input {
+  margin-left: 245rpx;
+  height: 60rpx;
+  border-radius: 5px;
+}
+
+.bc_text {
+  line-height: 68rpx;
+  height: 68rpx;
+  margin-top: 34rpx;
+}
+
+.sousuo {
+  margin-left: 15rpx;
+  width: 15%;
+  line-height: 150%;
+  text-align: center;
+  border: 1px solid #d0d0d0;
+  border-radius: 10rpx;
+}
+
+.page_row {
+  display: flex;
+  flex-direction: row;
+}
+
+.searchcion {
+  margin: 10rpx 10rpx 10rpx 10rpx;
+  position: absolute;
+  left: 245rpx;
+  z-index: 2;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+}
+
+.swiper-tab {
+  width: 100%;
+  text-align: center;
+  line-height: 80rpx;
+}
+
+.swiper-tab-list {
+  font-size: 26rpx;
+  display: inline-block;
+  width: 20%;
+  color: #777;
+}
+
+.on {
+  color: #cd0e28;
+  border-bottom: 5rpx solid #cd0e28;
+}
+
+.swiper-box {
+  display: block;
+  height: auto;
+  width: 100%;
+  overflow: hidden;
+}
+
+.together {
+  width: 100%;
+  height: 210rpx;
+  background: #f0eff5;
+  border-bottom: 1rpx solid #ddd;
+}
+
+.together image {
+  width: 100%;
+  height: 180rpx;
+}
+
+.share {
+  width: 95%;
+  height: 100%;
+  margin: 0 auto;
+  margin-top: 15rpx;
+}
+
+.details {
+  width: 100%;
+  height: 195rpx;
+  margin-top:15rpx;
+  border-bottom: 1rpx solid #ddd;
+}
+
+.pics {
+  width: 152rpx;
+  height: 155rpx;
+  float: left;
+  
+}
+
+.titles {
+  font-family: PingFang SC Regular;
+  font-size: 30rpx;
+  color: #000;
+  margin-left: 20rpx;
+  line-height: 20rpx;
+}
+
+.information {
+  font-family: PingFang SC Regular;
+  font-size: 24rpx;
+  color: #666;
+  margin-left: 20rpx;
+}
+
+.price {
+  font-family: PingFang SC Regular;
+  font-size: 36rpx;
+  color: #000;
+  margin-left: 20rpx;
+  line-height: 20rpx;
+  float: left;
+}
+
+.num {
+  font-family: PingFang SC Regular;
+  font-size: 36rpx;
+  color: #000;
+  margin-left: 20rpx;
+  line-height: 35rpx;
+  float: right;
+}
+
+.total {
+  width: 100%;
+  height: 88rpx;
+  font-family: PingFang SC Regular;
+  font-size: 26rpx;
+  color: #000;
+  line-height: 88rpx;
+  text-align: right;
+  border-bottom: 1rpx solid #ddd;
+}
+
+.status {
+  width: 100%;
+  height: 100rpx;
+  margin-top: 22rpx;
+  border-bottom: 1rpx solid #ddd;
+}
+
+.text {
+  width: 297rpx;
+  height: 60rpx;
+  float: left;
+  font-family: PingFang SC Regular;
+  font-size: 26rpx;
+  color: #cd0e28;
+  line-height: 60rpx;
+}
+
+.cancel {
+  width: 150rpx;
+  height: 60rpx;
+  float: left;
+  border: 1rpx solid #888;
+  border-radius: 15rpx;
+  font-family: PingFang SC Regular;
+  font-size: 26rpx;
+  color: #888;
+  line-height: 60rpx;
+  text-align: center;
+}
+
+.invite {
+  width: 220rpx;
+  height: 60rpx;
+  float: right;
+  border: 1rpx solid #cd0e28;
+  border-radius: 15rpx;
+  font-family: PingFang SC Regular;
+  font-size: 26rpx;
+  color: #cd0e28;
+  line-height: 60rpx;
+  text-align: center;
+}
+
+.l-mycheck {
+  width: 50rpx;
+  height: 20rpx;
+  float: left;
+  margin-top: 10rpx;
+}
+
+.refund {
+  width: auto;
+  height: 60rpx;
+  float: left;
+  font-family: PingFang SC Regular;
+  font-size: 26rpx;
+  color: #cd0e28;
+  line-height: 60rpx;
+}
+
+.refund_price {
+  width: auto;
+  height: 60rpx;
+  float: right;
+  font-family: PingFang SC Regular;
+  font-size: 26rpx;
+  color: #ccc;
+  line-height: 60rpx;
+}
+
+.courier_number {
+  width: 100%;
+  height: 100rpx;
+  margin-top: 22rpx;
+  border-bottom: 1rpx solid #ddd;
+}
+
+.courier_number view {
+  width: 220rpx;
+  height: 60rpx;
+  float: right;
+  border: 1rpx solid #cd0e28;
+  border-radius: 15rpx;
+  font-family: PingFang SC Regular;
+  font-size: 26rpx;
+  color: #cd0e28;
+  line-height: 60rpx;
+  text-align: center;
+}
+
+.none {
+  width: 100%;
+  height: 750rpx;
+  background: #f0eff5;
+}
+
+.none image {
+  width: 100%;
+  height: 205rpx;
+  margin-top: 100rpx;
+}
+.goodsName{
+  overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+}
+
+
+

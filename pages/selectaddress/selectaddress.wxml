@@ -1,0 +1,32 @@
+<!-- <radio-group class="radio-group" bindchange="radioChange">
+  <label class="radio" wx:for="{{address}}">
+    <radio value="{{item.addressId}}" checked="{{item.checked}}"/>
+    <text>姓名：{{item.userName}}</text>
+     <text>电话：{{item.userPhone}}</text>
+      <text>地址：{{item.userAddress}}</text>
+  </label>
+  <text bindtap='back'>确认</text>
+</radio-group> -->
+
+<radio-group class="radio-group" bindchange="radioChange">
+  <label class="radio" wx:for="{{address}}">
+<view class='center'>
+  <view class='heard'>
+    <view class='left'>
+      <view class='top'>
+        <text>姓名：{{item.userName}}</text>
+        <text class='phone'>电话：{{item.userPhone}}</text>
+      </view>
+      <view class='bottom'>
+        <view class='address'>地址：{{item.userAddress}}</view>
+      </view>
+
+    </view>
+    <radio value="{{item.addressId}}" checked="{{item.checked}}"/>
+  </view>
+</view>
+<view id='button'>
+<button bindtap='back' >确认</button>
+</view>
+  </label>
+</radio-group>

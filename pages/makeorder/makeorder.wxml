@@ -1,0 +1,124 @@
+<!--pages/order/order.wxml-->
+<form bindsubmit='button1'>
+  <view class='heard'>
+    <view id='box'>
+      <view class='top'>
+        <view wx:for="{{text}}" class="{{currentTab==item.num?'active':''}}" data-current="{{item.num}}" bindtap="clickTab">{{item.text}}</view>
+      </view>
+    </view>
+  </view>
+  <view class='top_text' class="{{currentTab==0?'top_text':'active2'}}">
+    <view class='box' bindtap='tosample'>
+      <view class='left'>选择商品</view>
+      <view class='right'>选择定制商品></view>
+    </view>
+    <view class='box' bindtap='toaddress'>
+      <view class='left' >选择地址</view>
+      <view class='right'>选择默认地址></view>
+    </view>
+   <view class='bottom'>
+<view class='box'>
+<view class='left'>填写定制数据</view> 
+<button class='right' form-type='submit'>确认并提交></button>
+</view>
+      <!-- 身型数据 -->
+
+      <view class='img'>
+        <image src='../img/530291438456721047.png'></image>
+        <view class='xian' wx:for='{{shu1}}' style='top:{{item.top}};width:{{item.width}};{{item.about}}:{{item.distance}}'></view>
+        <view class='shu' style='left:-160rpx;top:423rpx;'>
+          <view>筒高</view>
+          <view style='display:flex;line-height: 60rpx;'>(
+            <input name='name1' placeholder='比如70cm' placeholder-style='font-size:26rpx;color:#ccc;'></input>)</view>
+        </view>
+        <view class='shu' style='right:-160rpx;top:520rpx;'>
+          <view>筒围</view>
+          <view style='display:flex;line-height: 60rpx;'>(
+            <input name='name2' placeholder='比如40cm' placeholder-style='font-size:26rpx;color:#ccc;'></input>)</view>
+        </view>
+        <view class='shu' style='left:-163rpx;top:583rpx;'>
+          <view>小腿围</view>
+          <view style='display:flex;line-height: 60rpx;'>(
+            <input name='name3' placeholder='比如40cm' placeholder-style='font-size:26rpx;color:#ccc;'></input>)</view>
+        </view>
+        <view class='shu' style='left:-160rpx;top:705rpx;'>
+          <view>脚长</view>
+          <view style='display:flex;line-height: 60rpx;'>(
+            <input name='name4' placeholder='比如40cm' placeholder-style='font-size:26rpx;color:#ccc;'></input>)</view>
+        </view>
+        <view class='shu' style='right:-160rpx;top:705rpx;'>
+          <view>尺码</view>
+          <view style='display:flex;line-height: 60rpx;'>(
+            <input name='name5' placeholder='比如40cm' placeholder-style='font-size:26rpx;color:#ccc;'></input>)</view>
+        </view>
+      </view>
+
+
+    </view>
+  </view>
+  <view class='top_text' class="{{currentTab==1?'top_text':'active2'}}">
+    <view class='box'>
+      <view class='left'>选择商品</view>
+      <view class='right'>选择定制商品></view>
+    </view>
+    <view class='box'>
+      <view class='left'>选择商品</view>
+      <view class='right'>选择定制商品></view>
+    </view>
+    <view class='bottom'>
+      <view class='text'>填写定制数据</view>
+      <!-- 身型数据 -->
+      <view class='img'>
+        <image src='../img/530291438456721047.png'></image>
+        <view class='xian' wx:for='{{shu}}' style='top:{{item.top}};width:{{item.width}};{{item.about}}:{{item.distance}}'></view>
+        <view class='shu' style='right:-160rpx;top:0'>
+          <view>身高</view>
+          <view style='display:flex;line-height:60rpx;'>(
+            <input name='name6' placeholder='比如180cm' placeholder-style='font-size:26rpx;color:#ccc;'></input>
+            )</view>
+        </view>
+        <view class='shu' style='left:-170rpx;top:120rpx'>
+          <view>肩宽</view>
+          <view style='display:flex;line-height:60rpx;'>(
+            <input name='name7' placeholder='比如60cm' placeholder-style='font-size:26rpx;color:#ccc;'></input>
+            )</view>
+        </view>
+        <view class='shu' style='right:-160rpx;top:170rpx'>
+          <view>胸围</view>
+          <view style='display:flex;line-height:60rpx;'>(
+            <input name='name8' placeholder='比如80cm' placeholder-style='font-size:26rpx;color:#ccc;'></input>
+            )</view>
+        </view>
+        <view class='shu' style='left:-160rpx;top:274rpx'>
+          <view>腰围</view>
+          <view style='display:flex;line-height:60rpx;'>(
+            <input name='name9' placeholder='比如70cm' placeholder-style='font-size:26rpx;color:#ccc;'></input>
+            )</view>
+        </view>
+        <view class='shu' style='right:-160rpx;top:343rpx'>
+          <view>袖长</view>
+          <view style='display:flex;line-height:60rpx;'>(
+            <input name='name10' placeholder='比如100cm' placeholder-style='font-size:26rpx;color:#ccc;'></input>
+            )</view>
+        </view>
+
+      </view>
+    </view>
+  </view>
+  <!-- <view class='footer'>
+    <view class='nav'>
+      <view class='tu'>
+        <image src='../img/workbench@2x.png'></image>
+      </view>
+      <view class='text'>工作台</view>
+    </view>
+    <view class='nav'>
+      <view class='tu'>
+        <image src='../img/kefu.png'></image>
+      </view>
+      <view class='text'>客服</view>
+    </view>
+    <button class='modify'>修改</button>
+    <button class='confirm' form-type='submit'>确认</button>
+  </view> -->
+</form>
